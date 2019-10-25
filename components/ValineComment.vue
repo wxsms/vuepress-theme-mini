@@ -22,8 +22,7 @@
   }
 </script>
 
-<style scoped lang="less">
-  .v-comment-container {
-    margin: 5rem 0;
-  }
+<style scoped lang="stylus">
+  .v-comment-container
+    margin: 5rem 0
 </style>

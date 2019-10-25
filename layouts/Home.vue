@@ -36,63 +36,54 @@
   }
 </script>
 
-<style scoped lang="less">
-  .list {
-    list-style: none;
-    margin-top: 20px;
-    padding: 0;
+<style scoped lang="stylus">
+  .list
+    list-style: none
+    margin-top: 20px
+    padding: 0
 
-    li {
-      position: relative;
-      padding: 30px 0 30px;
-      border-bottom: 1px solid #e6e6e6;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    li
+      position: relative
+      padding: 30px 0 30px
+      border-bottom: 1px solid #e6e6e6
+      display: flex
+      flex-direction: row
+      align-items: center
 
-      h3 {
-        font-size: 13px;
-        color: #999;
-        margin: 0;
-        width: 100px;
-        flex-shrink: 0;
-        font-weight: lighter;
-        text-transform: uppercase;
-      }
+      h3
+        font-size: 13px
+        color: #999
+        margin: 0
+        width: 100px
+        flex-shrink: 0
+        font-weight: lighter
+        text-transform: uppercase
 
-      a {
-        margin-left: 30px;
-        display: block;
-        color: #2c3e50 !important;
-        font-size: 20px;
-        text-decoration: none !important;
-        letter-spacing: 1px;
-        font-weight: normal;
-        text-transform: uppercase;
-      }
-    }
-  }
+      a
+        margin-left: 30px
+        display: block
+        color: #2c3e50 !important
+        font-size: 20px
+        text-decoration: none !important
+        letter-spacing: 1px
+        font-weight: normal
+        text-transform: uppercase
 
-  @media screen and (max-width: 420px) {
-    .list {
-      list-style: none;
+  @media screen and (max-width: 420px)
+    .list
+      list-style: none
 
-      li {
-        border-bottom: 1px solid #e6e6e6;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+      li
+        border-bottom: 1px solid #e6e6e6
+        display: flex
+        flex-direction: column
+        align-items: flex-start
 
-        h3 {
-          font-size: 13px;
-          color: #999;
-          margin: 0 0 10px 0;
-        }
+        h3
+          font-size: 13px
+          color: #999
+          margin: 0 0 10px 0
 
-        a {
-          margin-left: 0;
-        }
-      }
-    }
-  }
+        a
+          margin-left: 0
 </style>
