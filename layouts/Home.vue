@@ -2,7 +2,7 @@
   <div class="theme-container no-sidebar">
     <main class="page">
       <div class="theme-default-content content__default">
-        <navbar/>
+        <nav-bar/>
         <ul class="list">
           <li v-for="post in posts" :key="post.key">
             <h3>{{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}</h3>
@@ -10,19 +10,19 @@
             <!--{{post}}-->
           </li>
         </ul>
-        <footer/>
+        <footer-bar/>
       </div>
     </main>
   </div>
 </template>
 
 <script>
-  import Navbar from '@theme/components/Navbar'
-  import Footer from '@theme/components/Footer'
+  import NavBar from '@theme/components/Navbar'
+  import FooterBar from '@theme/components/Footer'
   import format from 'date-fns/format'
 
   export default {
-    components: {Navbar, Footer},
+    components: {NavBar, FooterBar},
     computed: {
       posts () {
         return this.$site.pages

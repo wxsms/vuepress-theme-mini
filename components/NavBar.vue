@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="space-header">
     <router-link to="/" class="home-link">{{siteName}}</router-link>
     <div class="links" v-if="navLinks && navLinks.length">

@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="space-footer">
     <p class="footer-text">© {{year}} {{author}}</p>
   </div>
@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'Navbar',
+    name: 'FooterBar',
     data () {
       return {
         year: new Date().getFullYear()
