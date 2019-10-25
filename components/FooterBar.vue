@@ -1,6 +1,11 @@
 <template>
   <div class="space-footer">
     <p class="footer-text">© {{year}} {{author}}</p>
+    <p class="footer-text">
+      Powered by <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a>
+      &nbsp;&middot;&nbsp;
+      Theme by <a href="https://github.com/wxsms/vuepress-theme-mini" target="_blank">mini</a>
+    </p>
   </div>
 </template>
 
