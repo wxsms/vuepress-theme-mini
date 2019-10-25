@@ -1,10 +1,10 @@
 <template>
   <div class="space-header">
     <router-link to="/" class="home-link">{{siteName}}</router-link>
-    <div class="links" v-if="navLinks && navLinks.length">
-      <template v-for="(link,index) in navLinks">
+    <div class="links" v-if="nav && nav.length">
+      <template v-for="(link,index) in nav">
         <router-link :to="link.to" class="site-link">{{link.name}}</router-link>
-        <span v-if="index !== navLinks.length - 1">&nbsp;&middot;&nbsp;</span>
+        <span v-if="index !== nav.length - 1">&nbsp;&middot;&nbsp;</span>
       </template>
     </div>
   </div>
@@ -17,8 +17,8 @@
       siteName () {
         return this.$themeConfig.siteName
       },
-      navLinks () {
-        return this.$themeConfig.navLinks
+      nav () {
+        return this.$themeConfig.nav
       }
     }
   }
