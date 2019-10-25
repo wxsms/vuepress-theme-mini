@@ -7,9 +7,9 @@ cache:
   - node_modules
 node_js:
   - "node"
-#script:
+script:
+  - npm run test
 #  - npm run lint
-#  - npm run test
 #after_success: 'npm run coveralls'
 deploy:
   - provider: npm
