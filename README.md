@@ -49,8 +49,8 @@ module.exports = {
     // valine configurations: https://valine.js.org/configuration.html
     // note that `el` and `path` are already taken care and will be ignored
     valine: {
-      appId: 'PXFnynf8h6Qnpm9cIWT0BMgG-gzGzoHsz',
-      appKey: 'GshYVR9jngnBj94to63biynJ'
+      appId: '[your appId]',
+      appKey: '[your appKey]'
     }
   },
   // ...
