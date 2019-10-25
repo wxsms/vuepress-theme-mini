@@ -14,6 +14,7 @@
         window.AV = require('leancloud-storage')
         new Valine({
           ...this.$themeConfig.valine,
+          el: '#vcomments',
           path: this.$route.path
         })
       }

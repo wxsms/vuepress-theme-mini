@@ -17,8 +17,8 @@
 
 <script>
   import format from 'date-fns/format'
-  import NavBar from '@theme/components/Navbar'
-  import FooterBar from '@theme/components/Footer'
+  import NavBar from '@theme/components/NavBar'
+  import FooterBar from '@theme/components/FooterBar'
   import ValineComment from '@theme/components/ValineComment'
 
   export default {

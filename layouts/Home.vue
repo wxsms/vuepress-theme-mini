@@ -17,8 +17,8 @@
 </template>
 
 <script>
-  import NavBar from '@theme/components/Navbar'
-  import FooterBar from '@theme/components/Footer'
+  import NavBar from '@theme/components/NavBar'
+  import FooterBar from '@theme/components/FooterBar'
   import format from 'date-fns/format'
 
   export default {
