@@ -1,13 +1,28 @@
 <template functional>
   <div class="space-header">
-    <router-link to="/" class="home-link">wxsm's space</router-link>
-    <div class="links">
-      <router-link to="/" class="site-link">home</router-link>
-      <span>&nbsp;&middot;&nbsp;</span>
-      <router-link to="/about" class="site-link">about</router-link>
+    <router-link to="/" class="home-link">{{siteName}}</router-link>
+    <div class="links" v-if="navLinks && navLinks.length">
+      <template v-for="(link,index) in navLinks">
+        <router-link :to="link.to" class="site-link">{{link.name}}</router-link>
+        <span v-if="index !== navLinks.length - 1">&nbsp;&middot;&nbsp;</span>
+      </template>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'Navbar',
+    computed: {
+      siteName () {
+        return this.$themeConfig.siteName
+      },
+      navLinks () {
+        return this.$themeConfig.navLinks
+      }
+    }
+  }
+</script>
 
 <style lang="less">
   body {

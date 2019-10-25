@@ -1,8 +1,24 @@
 <template functional>
   <div class="space-footer">
-    <p class="footer-text">© 2019 wxsm</p>
+    <p class="footer-text">© {{year}} {{author}}</p>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'Navbar',
+    data () {
+      return {
+        year: new Date().getFullYear()
+      }
+    },
+    computed: {
+      author () {
+        return this.$themeConfig.author
+      }
+    }
+  }
+</script>
 
 <style lang="less" scoped>
 

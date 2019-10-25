@@ -1,24 +1,28 @@
 <template>
-  <div>
-    <space-header/>
-    <ul class="list">
-      <li v-for="post in posts" :key="post.key">
-        <h3>{{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}</h3>
-        <router-link :to="post.path" class="title-link">{{post.title}}</router-link>
-        <!--{{post}}-->
-      </li>
-    </ul>
-    <space-footer/>
+  <div class="theme-container no-sidebar">
+    <main class="page">
+      <div class="theme-default-content content__default">
+        <navbar/>
+        <ul class="list">
+          <li v-for="post in posts" :key="post.key">
+            <h3>{{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}</h3>
+            <router-link :to="post.path" class="title-link">{{post.title}}</router-link>
+            <!--{{post}}-->
+          </li>
+        </ul>
+        <footer/>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-  import SpaceHeader from '@theme/components/SpaceHeader'
-  import SpaceFooter from '@theme/components/SpaceFooter'
+  import Navbar from '@theme/components/Navbar'
+  import Footer from '@theme/components/Footer'
   import format from 'date-fns/format'
 
   export default {
-    components: { SpaceHeader, SpaceFooter },
+    components: {Navbar, Footer},
     computed: {
       posts () {
         return this.$site.pages

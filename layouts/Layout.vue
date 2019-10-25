@@ -2,14 +2,14 @@
   <div class="theme-container no-sidebar">
     <main class="page">
       <div class="theme-default-content content__default">
-        <space-header/>
+        <navbar/>
         <div class="title">
           <h3 v-if="$page.frontmatter.date">{{format(new Date($page.frontmatter.date), 'MMM dd, yyyy')}}</h3>
           <h1>{{$page.title}}</h1>
         </div>
         <Content/>
         <valine-comment v-if="$page.frontmatter.comment !== false" :key="$route.path"/>
-        <space-footer/>
+        <footer/>
       </div>
     </main>
   </div>
@@ -17,12 +17,12 @@
 
 <script>
   import format from 'date-fns/format'
-  import SpaceHeader from '@theme/components/SpaceHeader'
-  import SpaceFooter from '@theme/components/SpaceFooter'
+  import Navbar from '@theme/components/Navbar'
+  import Footer from '@theme/components/Footer'
   import ValineComment from '@theme/components/ValineComment'
 
   export default {
-    components: { ValineComment, SpaceHeader, SpaceFooter },
+    components: {ValineComment, Navbar, Footer},
     methods: {
       format
     }

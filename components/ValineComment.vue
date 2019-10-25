@@ -12,7 +12,10 @@
       if (typeof window !== 'undefined' && this.$themeConfig.valine) {
         const Valine = require('valine')
         window.AV = require('leancloud-storage')
-        new Valine(this.$themeConfig.valine)
+        new Valine({
+          ...this.$themeConfig.valine,
+          path: this.$route.path
+        })
       }
     }
   }
