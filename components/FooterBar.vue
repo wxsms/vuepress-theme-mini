@@ -27,8 +27,8 @@
 
 <style lang="stylus" scoped>
   .space-footer
-    text-align: center
-    margin-top: 5rem
+    // text-align: center
+    margin-top: 6rem
     margin-bottom: 0
 
     .footer-text

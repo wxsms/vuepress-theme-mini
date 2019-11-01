@@ -32,7 +32,8 @@
     margin-top: 1.5rem !important
 
   .space-header
-    text-align: center
+    margin-bottom 50px
+    // text-align: center
     // margin-top: -3.6rem !important
 
     .home-link
