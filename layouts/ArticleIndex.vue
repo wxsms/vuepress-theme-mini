@@ -5,7 +5,11 @@
         <nav-bar/>
         <ul class="list">
           <li v-for="post in posts" :key="post.key">
-            <h3>{{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}</h3>
+            <h3>
+              <template v-if="post.frontmatter.date">
+                {{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}
+              </template>
+            </h3>
             <router-link :to="post.path" class="title-link">{{post.title}}</router-link>
             <!--{{post}}-->
           </li>
@@ -22,12 +26,22 @@
   import format from 'date-fns/format'
 
   export default {
-    components: {NavBar, FooterBar},
+    components: { NavBar, FooterBar },
     computed: {
+      indexSymbol () {
+        return this.$page.frontmatter.articleIndex || this.$page.path
+      },
       posts () {
         return this.$site.pages
-          .filter(page => page.path.indexOf('/posts') === 0)
-          .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+          .filter(page => page.path.indexOf(this.indexSymbol) === 0)
+          .sort((a, b) => {
+            try {
+              return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+            } catch (e) {
+              // ignore
+              return 0
+            }
+          })
       }
     },
     methods: {

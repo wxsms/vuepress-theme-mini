@@ -9,7 +9,6 @@ A minimal blogging theme of VuePress.
 
 * extended from [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-default)
 * With [Valine](https://valine.js.org/) comment system integrated
-* Home page content will be ignored
 
 ## Example
 
@@ -56,6 +55,24 @@ module.exports = {
   // ...
 }
 ```
+## Layouts
+
+FYI: [Custom Layout for Specific Pages](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages)
+
+### Default
+
+Default layout for normal articles that including a comment area.
+
+### Page
+
+Almost the same as default but without comment.
+
+### ArticleList
+
+Display an article archive base on the folder structure or `articleIndex` param in YAML frontmatter.
+
+For example: if you place a `README.md` with `layout: ArticleList` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter.
+
 
 ## License
 
