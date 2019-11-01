@@ -33,7 +33,7 @@
       },
       posts () {
         return this.$site.pages
-          .filter(page => page.path.indexOf(this.indexSymbol) === 0)
+          .filter(page => page.path.indexOf(this.indexSymbol) === 0 && page.frontmatter.layout !== 'ArticleIndex')
           .sort((a, b) => {
             try {
               return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
