@@ -29,11 +29,11 @@
     components: { NavBar, FooterBar },
     computed: {
       indexSymbol () {
-        return this.$page.frontmatter.articleIndex || this.$page.path
+        return this.$page.frontmatter.articleIndex || this.$page.regularPath
       },
       posts () {
         return this.$site.pages
-          .filter(page => page.path.indexOf(this.indexSymbol) === 0 && page.frontmatter.layout !== 'ArticleIndex')
+          .filter(page => page.regularPath.indexOf(this.indexSymbol) === 0 && page.frontmatter.layout !== 'ArticleIndex')
           .sort((a, b) => {
             try {
               return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
