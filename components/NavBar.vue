@@ -3,8 +3,8 @@
     <router-link to="/" class="home-link">{{siteName}}</router-link>
     <div class="links" v-if="nav && nav.length">
       <template v-for="(item,index) in nav">
-        <router-link :to="item.link" class="site-link">{{item.text}}</router-link>
-        <span v-if="index !== nav.length - 1">&nbsp;&middot;&nbsp;</span>
+        <router-link :to="item.link" class="site-link">{{item.text}}<span v-if="index !== nav.length - 1">&nbsp;&middot;&nbsp;</span>
+        </router-link>
       </template>
     </div>
   </div>
