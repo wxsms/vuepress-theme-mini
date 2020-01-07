@@ -7,12 +7,18 @@
         </router-link>
       </template>
     </div>
+    <div class="search-box-container">
+      <SearchBox/>
+    </div>
   </div>
 </template>
 
 <script>
+  import SearchBox from '@SearchBox'
+
   export default {
     name: 'Navbar',
+    components: { SearchBox },
     computed: {
       siteName () {
         return this.$themeConfig.siteName
@@ -26,29 +32,42 @@
 
 <style lang="stylus">
   body
-    overflow-y: scroll
+    overflow-y scroll
 
   .theme-default-content:not(.custom) > *:first-child
-    margin-top: 1.5rem !important
+    margin-top 1.5rem !important
 
   .space-header
     margin-bottom 50px
-    // text-align: center
-    // margin-top: -3.6rem !important
+    position relative
+    // text-align center
+    // margin-top -3.6rem !important
 
     .home-link
-      color: #2c3e50 !important
-      text-decoration: none !important
-      letter-spacing: 3px
-      font-size: 20px
-      font-weight: lighter
+      color #2c3e50 !important
+      text-decoration none !important
+      letter-spacing 3px
+      font-size 20px
+      font-weight lighter
 
     .site-link
-      color: #2c3e50 !important
-      text-decoration: none !important
-      font-size: 15px
-      font-weight: lighter
+      color #2c3e50 !important
+      text-decoration none !important
+      font-size 15px
+      font-weight lighter
 
     .links
-      margin-top: 20px
+      margin-top 20px
+
+    .search-box-container
+      position absolute
+      top ((61px - 34px) / 2)
+      right 0
+
+  .search-box input
+    border-color #eee
+
+  @media screen and (max-width: 959px)
+    .search-box input
+      border-color transparent
 </style>
