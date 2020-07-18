@@ -12,7 +12,3 @@
     components: { Page, ValineComment }
   }
 </script>
-
-<style scoped lang="stylus">
-
-</style>
