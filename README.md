@@ -7,8 +7,8 @@
 
 A minimal blogging theme of VuePress.
 
-* extended from [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-default)
-* With [Valine](https://valine.js.org/) comment system integrated
+* extended from [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-default).
+* With [Valine](https://valine.js.org/) comment system integrated.
 
 ## Example
 
