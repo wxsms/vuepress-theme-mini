@@ -26,12 +26,13 @@
   import format from 'date-fns/format'
   import NavBar from '@theme/components/NavBar'
   import FooterBar from '@theme/components/FooterBar'
+  import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
   export default {
     components: { NavBar, FooterBar },
     computed: {
       lastUpdated () {
-        return this.$page.lastUpdated
+        return this.$page.lastUpdated ? formatDistanceToNow(new Date(this.$page.lastUpdated), { addSuffix: true }) : ''
       },
       lastUpdatedText () {
         if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
