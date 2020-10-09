@@ -12,7 +12,7 @@ A minimal blogging theme of VuePress.
 
 ## Example
 
-* [My Personal blog](https://wxsm.space/) ([Source](https://github.com/wxsms/blog))
+* [https://wxsm.space](https://wxsm.space/) ([Source](https://github.com/wxsms/blog))
 
 ## Install
 
@@ -20,11 +20,7 @@ NPM:
 
 ```bash
 npm install vuepress-theme-mini --save-dev
-```
-
-Yarn:
-
-```bash
+# or
 yarn add vuepress-theme-mini --dev
 ```
 
