@@ -98,13 +98,6 @@
   dependencies:
     "@types/node" "*"
 
-"@vuepress/plugin-back-to-top@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.npm.taobao.org/@vuepress/plugin-back-to-top/download/@vuepress/plugin-back-to-top-1.6.0.tgz#a10df98b7a4f57c627f72289cd0ab2ff0f075a1d"
-  integrity sha1-oQ35i3pPV8Yn9yKJzQqy/w8HWh0=
-  dependencies:
-    lodash.debounce "^4.0.8"
-
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/ansi-regex/download/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -462,11 +455,6 @@ localstorage-memory@^1.0.1, localstorage-memory@^1.0.2:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/localstorage-memory/download/localstorage-memory-1.0.3.tgz#566b37968fe0c4d76ba36a6da564fa613945ca72"
   integrity sha1-Vms3lo/gxNdro2ptpWT6YTlFynI=
-
-lodash.debounce@^4.0.8:
-  version "4.0.8"
-  resolved "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
-  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash@^4.17.10:
   version "4.17.20"
