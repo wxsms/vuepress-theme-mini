@@ -73,6 +73,9 @@ Display an article archive base on the folder structure or `articleIndex` param 
 
 For example: if you place a `README.md` with `layout: ArticleList` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter.
 
+## Changelog
+
+See [releases](https://github.com/wxsms/vuepress-theme-mini/releases).
 
 ## License
 
