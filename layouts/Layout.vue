@@ -1,14 +1,20 @@
 <template>
   <page>
     <valine-comment v-if="$page.frontmatter.comment !== false" :key="$route.path"/>
+    <RightAnchor v-if="showRightAnchor"/>
   </page>
 </template>
 
 <script>
-  import ValineComment from '@theme/components/ValineComment'
-  import Page from '@theme/layouts/Page'
+import ValineComment from '@theme/components/ValineComment'
+import Page from '@theme/layouts/Page'
 
-  export default {
-    components: { Page, ValineComment }
+export default {
+  components: { Page, ValineComment },
+  computed :{
+    showRightAnchor () {
+      return this.$page.headers && this.$page.headers.length > 0
+    }
   }
+}
 </script>

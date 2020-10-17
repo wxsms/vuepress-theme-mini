@@ -14,63 +14,74 @@
 </template>
 
 <script>
-  import SearchBox from '@SearchBox'
+import SearchBox from '@SearchBox'
 
-  export default {
-    name: 'Navbar',
-    components: { SearchBox },
-    computed: {
-      siteName () {
-        return this.$themeConfig.siteName
-      },
-      nav () {
-        return this.$themeConfig.nav
-      }
+export default {
+  name: 'Navbar',
+  components: { SearchBox },
+  computed: {
+    siteName () {
+      return this.$themeConfig.siteName
+    },
+    nav () {
+      return this.$themeConfig.nav
     }
   }
+}
 </script>
 
 <style lang="stylus">
-  body
-    overflow-y scroll
+body
+  overflow-y scroll
 
-    .content__default
-      word-break break-all
+  .content__default
+    word-break break-all
 
-  .theme-default-content:not(.custom) > *:first-child
-    margin-top 1.5rem !important
+.theme-default-content:not(.custom) > *:first-child
+  margin-top 1.5rem !important
 
-  .space-header
-    margin-bottom 50px
-    position relative
-    // text-align center
-    // margin-top -3.6rem !important
+.space-header
+  margin-bottom 50px
+  position relative
+  // text-align center
+  // margin-top -3.6rem !important
 
-    .home-link
-      color #2c3e50 !important
-      text-decoration none !important
-      letter-spacing 3px
-      font-size 20px
-      font-weight lighter
+  .home-link
+    color #2c3e50 !important
+    text-decoration none !important
+    letter-spacing 3px
+    font-size 20px
+    font-weight lighter
 
-    .site-link
-      color #2c3e50 !important
-      text-decoration none !important
-      font-size 15px
-      font-weight lighter
+  .site-link
+    color #2c3e50 !important
+    text-decoration none !important
+    font-size 15px
+    font-weight lighter
 
-    .links
-      margin-top 20px
+  .links
+    margin-top 20px
 
-    .search-box-container
-      position absolute
-      top ((61px - 34px) / 2)
-      right 0
+  .search-box-container
+    position absolute
+    top ((61px - 34px) / 2)
+    right 0
 
+.search-box input
+  border-color #eee
+
+@media screen and (max-width: 959px)
   .search-box input
-    border-color #eee
+    border-color transparent
 
-  @media screen and (max-width: 959px)
-    .search-box input
-      border-color transparent
+.global-ui .right-anchor
+  display none !important
+
+.right-anchor
+  width 200px
+  overflow hidden
+
+@media screen and (max-width: 1199px)
+  .right-anchor
+    display none !important
 </style>
