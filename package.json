@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "date-fns": "2.16.1",
-    "leancloud-storage": "4.6.1",
+    "leancloud-storage": "4.7.0",
     "valine": "1.4.14",
     "vuepress-plugin-right-anchor": "0.2.1"
   }
