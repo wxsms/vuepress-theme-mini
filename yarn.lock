@@ -720,13 +720,6 @@ valine@1.4.14:
     storejs "^1.0.25"
     xss "^1.0.6"
 
-vuepress-plugin-right-anchor@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-right-anchor/download/vuepress-plugin-right-anchor-0.2.1.tgz#17f7a2aeb87e3ad4b330da7ac34aba2e906d2677"
-  integrity sha1-F/eirrh+OtSzMNp6w0q6LpBtJnc=
-  dependencies:
-    lodash.debounce "^4.0.8"
-
 window-size@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npm.taobao.org/window-size/download/window-size-0.1.4.tgz#f8e1aa1ee5a53ec5bf151ffa09742a6ad7697876"
