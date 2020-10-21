@@ -61,7 +61,8 @@
       },
       filterDataByLevel () {
         this.listData = []
-        this.$page.headers.forEach((item) => {
+        const headers = this.$page.headers || []
+        headers.forEach((item) => {
           if (item.level === 2 || item.level === 3) {
             this.listData.push(JSON.parse(JSON.stringify(item)))
           }

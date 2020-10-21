@@ -74,9 +74,6 @@ body
   .search-box input
     border-color transparent
 
-.global-ui .right-anchor
-  display none !important
-
 .right-anchor
   width 200px
   overflow hidden
