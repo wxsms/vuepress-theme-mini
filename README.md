@@ -46,7 +46,12 @@ module.exports = {
     valine: {
       appId: '[your appId]',
       appKey: '[your appKey]'
-    }
+    },
+    // sometimes vuepress navigation dies for no reason
+    // while refreshing inside some post or navigate directly to some page,
+    // use this option to disable vue-router on navbar
+    // and use plain <a> tag to avoid this problem.
+    useSimpleLinkOnNavBar: false
   },
   // ...
 }

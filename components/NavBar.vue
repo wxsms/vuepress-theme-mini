@@ -1,10 +1,14 @@
 <template>
   <div class="space-header">
-    <router-link to="/" class="home-link">{{siteName}}</router-link>
+    <a v-if="useSimpleLinkOnNavBar" href="/" class="home-link" v-text="siteName"></a>
+    <router-link v-else to="/" class="home-link" v-text="siteName"></router-link>
     <div class="links" v-if="nav && nav.length">
       <template v-for="(item,index) in nav">
-        <router-link :to="item.link" class="site-link">{{item.text}}<span v-if="index !== nav.length - 1">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
-        </router-link>
+        <span>
+          <a v-if="useSimpleLinkOnNavBar" :href="item.link" class="site-link" v-text="item.text"></a>
+          <router-link v-else :to="item.link" class="site-link" v-text="item.text"></router-link>
+          <span v-if="index !== nav.length - 1" v-html="splitter"></span>
+        </span>
       </template>
     </div>
     <div class="search-box-container">
@@ -19,12 +23,20 @@ import SearchBox from '@SearchBox'
 export default {
   name: 'Navbar',
   components: { SearchBox },
+  data () {
+    return {
+      splitter: '&nbsp;&nbsp;&middot;&nbsp;&nbsp;'
+    }
+  },
   computed: {
     siteName () {
       return this.$themeConfig.siteName
     },
     nav () {
       return this.$themeConfig.nav
+    },
+    useSimpleLinkOnNavBar () {
+      return this.$themeConfig.useSimpleLinkOnNavBar
     }
   }
 }
