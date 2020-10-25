@@ -41,8 +41,8 @@ export default {
 body
   overflow-y scroll
 
-  .content__default
-    word-break break-all
+// .content__default
+//   word-break break-all
 
 .theme-default-content:not(.custom) > *:first-child
   margin-top 1.5rem !important
