@@ -1,12 +1,10 @@
 <template>
   <div class="space-header">
-    <a v-if="useSimpleLinkOnNavBar" href="/" class="home-link" v-text="siteName"></a>
-    <router-link v-else to="/" class="home-link" v-text="siteName"></router-link>
+    <router-link to="/" class="home-link" v-text="siteName"></router-link>
     <div class="links" v-if="nav && nav.length">
       <template v-for="(item,index) in nav">
         <span>
-          <a v-if="useSimpleLinkOnNavBar" :href="item.link" class="site-link" v-text="item.text"></a>
-          <router-link v-else :to="item.link" class="site-link" v-text="item.text"></router-link>
+          <router-link :to="item.link" class="site-link" v-text="item.text"></router-link>
           <span v-if="index !== nav.length - 1" v-html="splitter"></span>
         </span>
       </template>
@@ -34,9 +32,6 @@ export default {
     },
     nav () {
       return this.$themeConfig.nav
-    },
-    useSimpleLinkOnNavBar () {
-      return this.$themeConfig.useSimpleLinkOnNavBar
     }
   }
 }
