@@ -16,12 +16,16 @@ A minimal blogging theme of VuePress.
 
 ## Install
 
-NPM:
-
 ```bash
-npm install vuepress-theme-mini --save-dev
+# NPM registry:
+npm install vuepress-theme-mini -D
 # or
-yarn add vuepress-theme-mini --dev
+yarn add vuepress-theme-mini -D
+
+# GitHub registry:
+npm install @wxsms/vuepress-theme-mini -D
+# or
+yarn add @wxsms/vuepress-theme-mini -D
 ```
 
 ## Usage
