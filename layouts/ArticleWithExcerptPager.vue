@@ -5,7 +5,7 @@
         <nav-bar/>
         <Content/>
         <ul class="article-list article-list-with-excerpt">
-          <li v-for="post in postChunks[page]" :key="post.key">
+          <li v-for="post in postChunks[page - 1]" :key="post.key">
             <h3>
               <template v-if="post.frontmatter.date">
                 {{ format(new Date(post.frontmatter.date), 'MMM dd, yyyy') }}
@@ -25,18 +25,16 @@
 
         <div class="article-page-nav">
           <p class="inner">
-            <span class="prev" v-if="page > 0">←&nbsp;
+            <span class="prev" v-if="page > 1">←&nbsp;
               <router-link
                   class="prev"
                   :to="`${$page.regularPath}?page=${page - 1}`"
-                  @click.native="--page"
                   v-text="'Newer'"
               />
             </span>
-            <span class="next" v-if="page < postChunks.length - 1">
+            <span class="next" v-if="page < postChunks.length">
                <router-link
                    :to="`${$page.regularPath}?page=${page + 1}`"
-                   @click.native="++page"
                    v-text="'Older'"
                />
               &nbsp;→
@@ -61,7 +59,15 @@ export default {
   components: { NavBar, FooterBar },
   data () {
     return {
-      page: Math.floor(Number(this.$route.query.page || 0))
+      page: 1
+    }
+  },
+  watch: {
+    '$route.query.page': {
+      handler (val) {
+        this.page = Math.floor(Number(val)) || 1
+      },
+      immediate: true
     }
   },
   computed: {
