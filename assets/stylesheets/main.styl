@@ -6,13 +6,14 @@
   &.article-list-with-excerpt
     > li
       align-items: flex-start
-
-      > h3
-        margin: 10px 0 0
+      flex-direction column
 
       > .list-item
+        margin-left 0
+        max-width: 100%;
+
         > a
-          font-size: 25px
+          font-size: 30px
 
   > li
     position: relative
@@ -42,7 +43,6 @@
       margin-left: 30px
       display flex
       flex-direction column
-      overflow hidden
 
       > a
         display: block
@@ -58,6 +58,12 @@
   .article-list
     list-style: none
 
+    &.article-list-with-excerpt
+      > li
+        > .list-item
+          > a
+            font-size: 25px
+
     > li
       flex-direction: column
       align-items: flex-start
@@ -70,16 +76,13 @@
 
 .article-page-nav
   max-width: 740px;
-  margin: 0 auto;
-  padding: 2rem 0
-  padding-top: 1rem;
-  padding-bottom: 0
+  margin: 30px auto 0
 
   .inner
-    min-height: 2rem;
+    min-height: 60px;
     margin-top: 0;
     border-top: 1px solid #eaecef;
-    padding-top: 1rem;
+    padding-top: 30px;
     overflow: auto
 
   .next
