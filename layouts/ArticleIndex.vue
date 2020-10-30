@@ -3,15 +3,16 @@
     <main class="page">
       <div class="theme-default-content content__default">
         <nav-bar/>
-        <ul class="list">
+        <ul class="article-list">
           <li v-for="post in posts" :key="post.key">
             <h3>
               <template v-if="post.frontmatter.date">
                 {{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}
               </template>
             </h3>
-            <router-link :to="post.path" class="title-link">{{post.title}}</router-link>
-            <!--{{post}}-->
+            <div class="list-item">
+              <router-link :to="post.path" class="title-link">{{ post.title }}</router-link>
+            </div>
           </li>
         </ul>
         <footer-bar/>
@@ -50,57 +51,6 @@
   }
 </script>
 
-<style scoped lang="stylus">
-  .list
-    list-style: none
-    margin-top: 20px
-    padding: 0
-
-    li
-      position: relative
-      padding: 30px 0 30px
-      border-bottom: 1px solid #eee
-      display: flex
-      flex-direction: row
-      align-items: center
-
-      &:first-child
-        padding-top: 0
-
-      &:last-child
-        border-bottom: 0
-        padding-bottom: 0
-
-      h3
-        font-size: 13px
-        color: #999
-        margin: 0
-        width: 100px
-        flex-shrink: 0
-        font-weight: lighter
-        text-transform: uppercase
-
-      a
-        margin-left: 30px
-        display: block
-        color: #2c3e50 !important
-        font-size: 20px
-        text-decoration: none !important
-        letter-spacing: 1px
-        font-weight: normal
-        text-transform: uppercase
-
-  @media screen and (max-width: 420px)
-    .list
-      list-style: none
-
-      li
-        flex-direction: column
-        align-items: flex-start
-
-        h3
-          margin: 0 0 10px 0
-
-        a
-          margin-left: 0
+<style lang="stylus">
+@import "../assets/stylesheets/main.styl"
 </style>

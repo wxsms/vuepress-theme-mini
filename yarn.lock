@@ -456,6 +456,11 @@ localstorage-memory@^1.0.1, localstorage-memory@^1.0.2:
   resolved "https://registry.npm.taobao.org/localstorage-memory/download/localstorage-memory-1.0.3.tgz#566b37968fe0c4d76ba36a6da564fa613945ca72"
   integrity sha1-Vms3lo/gxNdro2ptpWT6YTlFynI=
 
+lodash.chunk@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npm.taobao.org/lodash.chunk/download/lodash.chunk-4.2.0.tgz#66e5ce1f76ed27b4303d8c6512e8d1216e8106bc"
+  integrity sha1-ZuXOH3btJ7QwPYxlEujRIW6BBrw=
+
 lodash.debounce@4.0.8:
   version "4.0.8"
   resolved "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"

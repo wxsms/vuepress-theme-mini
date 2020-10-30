@@ -1,0 +1,92 @@
+.article-list
+  list-style: none
+  margin-top: 20px
+  padding: 0
+
+  &.article-list-with-excerpt
+    > li
+      align-items: flex-start
+
+      > h3
+        margin: 10px 0 0
+
+      > .list-item
+        > a
+          font-size: 25px
+
+  > li
+    position: relative
+    padding: 30px 0 30px
+    border-bottom: 1px solid #eee
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    &:first-child
+      padding-top: 0
+
+    &:last-child
+      border-bottom: 0
+      padding-bottom: 0
+
+    > h3
+      font-size: 13px
+      color: #999
+      margin: 0
+      width: 100px
+      flex-shrink: 0
+      font-weight: lighter
+      text-transform: uppercase
+
+    > .list-item
+      margin-left: 30px
+      display flex
+      flex-direction column
+      overflow hidden
+
+      > a
+        display: block
+        color: #2c3e50 !important
+        font-size: 20px
+        text-decoration: none !important
+        letter-spacing: 1px
+        font-weight: normal
+        text-transform: uppercase
+
+
+@media screen and (max-width: 420px)
+  .article-list
+    list-style: none
+
+    > li
+      flex-direction: column
+      align-items: flex-start
+
+      > h3
+        margin: 0 0 10px 0
+
+      > .list-item
+        margin-left: 0
+
+.article-page-nav
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 2rem 0
+  padding-top: 1rem;
+  padding-bottom: 0
+
+  .inner
+    min-height: 2rem;
+    margin-top: 0;
+    border-top: 1px solid #eaecef;
+    padding-top: 1rem;
+    overflow: auto
+
+  .next
+    float: right
+
+  &:after
+    display block
+    clear both
+    content ''
+    position relative
