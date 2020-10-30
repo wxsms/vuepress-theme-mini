@@ -12,10 +12,14 @@
               </template>
             </h3>
             <div class="list-item">
-              <router-link :to="post.path" class="title-link">{{ post.title }}</router-link>
-              <div class="excerpt" v-html="post.excerpt"></div>
+              <router-link :to="post.path" class="title-link" v-text="post.title"/>
+              <template v-if="post.excerpt">
+                <div class="excerpt" v-html="post.excerpt"></div>
+                <div class="read-more">
+                  <router-link :to="post.path" class="read-more-link" v-text="'Read more...'"/>
+                </div>
+              </template>
             </div>
-
           </li>
         </ul>
 
