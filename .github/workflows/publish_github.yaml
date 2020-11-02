@@ -1,4 +1,4 @@
-name: CI
+name: CD
 
 on:
   push:
@@ -9,6 +9,9 @@ jobs:
   publish_github:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - uses: actions/checkout@v2
       - name: change package name
         uses: deef0000dragon1/json-edit-action@v1
@@ -17,12 +20,6 @@ jobs:
           VALUE: "@wxsms/vuepress-theme-mini"
           FILE: package.json
       - uses: c-hive/gha-yarn-cache@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
       - run: yarn --frozen-lockfile
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          registry: https://npm.pkg.github.com/
-          check-version: false
+      - run: echo //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }} >> .npmrc
+      - run: npm publish --registry=https://npm.pkg.github.com
