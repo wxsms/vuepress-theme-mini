@@ -14,6 +14,7 @@ module.exports = {
     navbar: true,
     nav: [
       { text: 'home', link: '/' },
+      { text: 'archive', link: '/archive/' },
       { text: 'about', link: '/about/' }
     ],
     valine: {

@@ -1,0 +1,4 @@
+---
+layout: ArticleIndex
+articleIndex: /posts
+---
