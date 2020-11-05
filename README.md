@@ -12,7 +12,8 @@ A minimal blogging theme of VuePress.
 
 ## Example
 
-* [https://wxsm.space](https://wxsm.space/) ([Source](https://github.com/wxsms/blog))
+* [https://vuepress-theme-mini.wxsm.space](https://vuepress-theme-mini.wxsm.space)
+* [https://wxsm.space](https://wxsm.space/)
 
 ## Install
 

@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "date-fns": "2.16.1",
@@ -16,5 +18,12 @@
     "lodash.chunk": "4.2.0",
     "lodash.debounce": "4.0.8",
     "valine": "1.4.14"
+  },
+  "peerDependencies": {
+    "vuepress": "^1.7.1"
+  },
+  "devDependencies": {
+    "markdown-it-include": "^2.0.0",
+    "vuepress": "^1.7.1"
   }
 }

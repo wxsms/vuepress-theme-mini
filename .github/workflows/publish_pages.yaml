@@ -1,0 +1,29 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy_gh_pages:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout & yarn
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: master
+      - uses: c-hive/gha-yarn-cache@v1
+      - run: yarn --frozen-lockfile
+      # build
+      - run: npm run docs:build
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.1.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          target_branch: gh-pages
+          build_dir: docs/.vuepress/dist
+          jekyll: false # 禁用 GitHub 默认开启的 jekyll 构建
+          fqdn: vuepress-theme-mini.wxsm.space # 自定义域名，需要时填写
