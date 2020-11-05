@@ -23,7 +23,7 @@
     "vuepress": "^1.7.1"
   },
   "devDependencies": {
-    "markdown-it-include": "^2.0.0",
-    "vuepress": "^1.7.1"
+    "markdown-it-include": "2.0.0",
+    "vuepress": "1.7.1"
   }
 }

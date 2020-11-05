@@ -5145,7 +5145,7 @@ markdown-it-emoji@^1.4.0:
   resolved "https://registry.npm.taobao.org/markdown-it-emoji/download/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
 
-markdown-it-include@^2.0.0:
+markdown-it-include@2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/markdown-it-include/download/markdown-it-include-2.0.0.tgz#e86e3b3c68c8f0e0437e179ba919ffd28443127a"
   integrity sha1-6G47PGjI8OBDfhebqRn/0oRDEno=
@@ -8022,9 +8022,9 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress@^1.7.1:
+vuepress@1.7.1:
   version "1.7.1"
-  resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.7.1.tgz?cache=0&sync_timestamp=1602782932940&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuepress%2Fdownload%2Fvuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
+  resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.7.1.tgz?cache=0&sync_timestamp=1602782896786&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuepress%2Fdownload%2Fvuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
   integrity sha1-uw4TnYxAegtaqWLPlXeDKlgIk34=
   dependencies:
     "@vuepress/core" "1.7.1"
