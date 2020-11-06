@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-mini",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "A minimal blogging theme of VuePress.",
   "main": "index.js",
   "repository": "https://github.com/wxsms/vuepress-theme-mini.git",
