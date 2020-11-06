@@ -1,0 +1,102 @@
+.article-list
+  list-style: none
+  margin-top: 20px
+  padding: 0
+
+  &.article-list-with-excerpt
+    > li
+      align-items: flex-start
+      flex-direction column
+
+      > .list-item
+        margin-left 0
+
+        > .title-link
+          font-size: 30px
+
+        > .read-more
+          // margin-top 10px
+
+          .read-more-link
+            text-align left
+
+  > li
+    position: relative
+    padding: 30px 0 30px
+    border-bottom: 1px solid #eee
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    &:first-child
+      padding-top: 0
+
+    &:last-child
+      border-bottom: 0
+      padding-bottom: 0
+
+    > h3
+      font-size: 13px
+      color: #999
+      margin: 0
+      width: 100px
+      flex-shrink: 0
+      font-weight: lighter
+      text-transform: uppercase
+
+    > .list-item
+      margin-left: 30px
+      display flex
+      flex-direction column
+      width: 100%;
+      max-width: 100%;
+
+      > .title-link
+        display: block
+        color: #2c3e50 !important
+        font-size: 20px
+        text-decoration: none !important
+        letter-spacing: 1px
+        font-weight: normal
+        text-transform: uppercase
+
+
+@media screen and (max-width: 420px)
+  .article-list
+    list-style: none
+
+    &.article-list-with-excerpt
+      > li
+        > .list-item
+          > .title-link
+            font-size: 25px
+
+    > li
+      flex-direction: column
+      align-items: flex-start
+
+      > h3
+        margin: 0 0 10px 0
+
+      > .list-item
+        margin-left: 0
+
+.article-page-nav
+  max-width: 740px;
+  margin: 30px auto 0
+
+  .inner
+    min-height: 60px;
+    margin-top: 0;
+    border-top: 1px solid #eaecef;
+    padding-top: 30px;
+    overflow: auto
+
+  .next
+    float: right
+
+  &:after
+    display block
+    clear both
+    content ''
+    position relative

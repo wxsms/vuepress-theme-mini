@@ -1,102 +1,54 @@
-.article-list
-  list-style: none
-  margin-top: 20px
-  padding: 0
+img + span
+  .icon.outbound
+    display: none;
 
-  &.article-list-with-excerpt
-    > li
-      align-items: flex-start
-      flex-direction column
+body
+  overflow-y scroll
 
-      > .list-item
-        margin-left 0
+.search-box .suggestions
+  z-index: 10
 
-        > .title-link
-          font-size: 30px
+.theme-default-content:not(.custom) > *:first-child
+  margin-top 1.5rem !important
 
-        > .read-more
-          // margin-top 10px
+.space-header
+  margin-bottom 50px
+  position relative
+  // text-align center
+  // margin-top -3.6rem !important
 
-          .read-more-link
-            text-align left
+  .home-link
+    color #2c3e50 !important
+    text-decoration none !important
+    letter-spacing 3px
+    font-size 20px
+    font-weight lighter
 
-  > li
-    position: relative
-    padding: 30px 0 30px
-    border-bottom: 1px solid #eee
-    display: flex
-    flex-direction: row
-    align-items: center
+  .site-link
+    color #2c3e50 !important
+    text-decoration none !important
+    font-size 15px
+    font-weight lighter
 
-    &:first-child
-      padding-top: 0
+  .links
+    margin-top 20px
 
-    &:last-child
-      border-bottom: 0
-      padding-bottom: 0
+  .search-box-container
+    position absolute
+    top ((61px - 34px) / 2)
+    right 0
 
-    > h3
-      font-size: 13px
-      color: #999
-      margin: 0
-      width: 100px
-      flex-shrink: 0
-      font-weight: lighter
-      text-transform: uppercase
+.search-box input
+  border-color #eee
 
-    > .list-item
-      margin-left: 30px
-      display flex
-      flex-direction column
-      width: 100%;
-      max-width: 100%;
+@media screen and (max-width: 959px)
+  .search-box input
+    border-color transparent
 
-      > .title-link
-        display: block
-        color: #2c3e50 !important
-        font-size: 20px
-        text-decoration: none !important
-        letter-spacing: 1px
-        font-weight: normal
-        text-transform: uppercase
+.right-anchor
+  width 200px
+  overflow hidden
 
-
-@media screen and (max-width: 420px)
-  .article-list
-    list-style: none
-
-    &.article-list-with-excerpt
-      > li
-        > .list-item
-          > .title-link
-            font-size: 25px
-
-    > li
-      flex-direction: column
-      align-items: flex-start
-
-      > h3
-        margin: 0 0 10px 0
-
-      > .list-item
-        margin-left: 0
-
-.article-page-nav
-  max-width: 740px;
-  margin: 30px auto 0
-
-  .inner
-    min-height: 60px;
-    margin-top: 0;
-    border-top: 1px solid #eaecef;
-    padding-top: 30px;
-    overflow: auto
-
-  .next
-    float: right
-
-  &:after
-    display block
-    clear both
-    content ''
-    position relative
+@media screen and (max-width: 1199px)
+  .right-anchor
+    display none !important
