@@ -1,6 +1,12 @@
+// remove image link outbound icons
+// see https://github.com/vuejs/vuepress/issues/610#issuecomment-491141547
 img + span
   .icon.outbound
     display: none;
+
+img + .icon.outbound
+    display: none;
+
 
 body
   overflow-y scroll
