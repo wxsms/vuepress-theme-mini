@@ -4917,10 +4917,10 @@ leancloud-realtime@^5.0.0-alpha.3, leancloud-realtime@^5.0.0-rc.2:
     protobufjs "^5.0.1"
     uuid "^3.0.0"
 
-leancloud-storage@4.8.0:
-  version "4.8.0"
-  resolved "https://registry.npm.taobao.org/leancloud-storage/download/leancloud-storage-4.8.0.tgz#87bbb90ec8b57401cf045c924bb1bdb25abd418a"
-  integrity sha1-h7u5Dsi1dAHPBFySS7G9slq9QYo=
+leancloud-storage@4.8.1:
+  version "4.8.1"
+  resolved "https://registry.npm.taobao.org/leancloud-storage/download/leancloud-storage-4.8.1.tgz#f963fe3f6a29ee3ba38059c77b8e62a031298e5f"
+  integrity sha1-+WP+P2op7jujgFnHe45ioDEpjl8=
   dependencies:
     "@leancloud/adapter-types" "^3.0.0"
     "@leancloud/platform-adapters-browser" "^1.1.0"
