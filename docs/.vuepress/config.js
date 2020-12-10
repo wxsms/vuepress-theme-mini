@@ -5,8 +5,8 @@ module.exports = {
   description: 'A minimal blogging theme of VuePress.',
   theme: path.join(__dirname, '..', '..'),
   themeConfig: {
-    // useSimpleLinkOnNavBar: true,
-    // 这个平滑滚动是通过 css 实现的，会导致一些不必要的动画，较为烦人
+    hostname: 'https://vuepress-theme-mini.wxsm.space',
+    ga: 'UA-102731925-1',
     smoothScroll: false,
     lastUpdated: 'Last Updated',
     siteName: 'vuepress-theme-mini',

@@ -38,6 +38,8 @@ module.exports = {
   // ...
   theme: 'mini',
   themeConfig: {
+    hostname: 'https://xxx', // provide to enable sitemap and rss feed generation
+    ga: 'xxx', // provide to enable google analysis
     siteName: '...', // site name at navbar
     author: '...', // author name at footer
     // enable navbar and add links
