@@ -1211,14 +1211,14 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-back-to-top@^1.7.1":
+"@vuepress/plugin-back-to-top@1.7.1":
   version "1.7.1"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-back-to-top/download/@vuepress/plugin-back-to-top-1.7.1.tgz#8bdc4a2de95f8244f167b3b3066c2610b88aabeb"
   integrity sha1-i9xKLelfgkTxZ7OzBmwmELiKq+s=
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-google-analytics@^1.7.1":
+"@vuepress/plugin-google-analytics@1.7.1":
   version "1.7.1"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-google-analytics/download/@vuepress/plugin-google-analytics-1.7.1.tgz#c337e13c8a27f6fea911a04db22a3f3596a571fb"
   integrity sha1-wzfhPIon9v6pEaBNsio/NZalcfs=
@@ -5078,14 +5078,14 @@ lodash.padstart@^4.6.1:
   resolved "https://registry.npm.taobao.org/lodash.padstart/download/lodash.padstart-4.6.1.tgz#d2e3eebff0d9d39ad50f5cbd1b52a7bce6bb611b"
   integrity sha1-0uPuv/DZ05rVD1y9G1KnvOa7YRs=
 
-lodash.reverse@^4.0.1:
+lodash.reverse@4.0.1:
   version "4.0.1"
   resolved "https://registry.npm.taobao.org/lodash.reverse/download/lodash.reverse-4.0.1.tgz#1f2afedace2e16e660f3aa7c59d3300a6f25d13c"
   integrity sha1-Hyr+2s4uFuZg86p8WdMwCm8l0Tw=
 
-lodash.sortby@^4.7.0:
+lodash.sortby@4.7.0, lodash.sortby@^4.7.0:
   version "4.7.0"
-  resolved "https://registry.npm.taobao.org/lodash.sortby/download/lodash.sortby-4.7.0.tgz?cache=0&sync_timestamp=1589683608371&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash.sortby%2Fdownload%2Flodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
+  resolved "https://registry.npm.taobao.org/lodash.sortby/download/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
 lodash.template@^4.5.0:
@@ -8121,7 +8121,7 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-feed@^0.1.9:
+vuepress-plugin-feed@0.1.9:
   version "0.1.9"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-feed/download/vuepress-plugin-feed-0.1.9.tgz#706fc381c1831c110d161b7e892057750c8904da"
   integrity sha1-cG/DgcGDHBENFht+iSBXdQyJBNo=
@@ -8134,14 +8134,14 @@ vuepress-plugin-feed@^0.1.9:
     remove-markdown "0.3.0"
     striptags "3.1.1"
 
-vuepress-plugin-flowchart-js@^2.0.2:
+vuepress-plugin-flowchart-js@2.0.2:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-flowchart-js/download/vuepress-plugin-flowchart-js-2.0.2.tgz#68c81ebf32f4470c0a461bd4fa93cf67586d8cce"
   integrity sha1-aMgevzL0RwwKRhvU+pPPZ1htjM4=
   dependencies:
     flowchart.js "1.15.0"
 
-vuepress-plugin-sitemap@^2.3.1:
+vuepress-plugin-sitemap@2.3.1:
   version "2.3.1"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-sitemap/download/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
   integrity sha1-USmKynel3pY5b9vRED4WN91hrmo=
