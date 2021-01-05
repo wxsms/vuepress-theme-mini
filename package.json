@@ -18,8 +18,8 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "1.7.1",
-    "@vuepress/plugin-google-analytics": "1.7.1",
+    "@vuepress/plugin-back-to-top": "1.8.0",
+    "@vuepress/plugin-google-analytics": "1.8.0",
     "date-fns": "2.16.1",
     "leancloud-storage": "4.9.0",
     "lodash.chunk": "4.2.0",
@@ -36,6 +36,6 @@
   },
   "devDependencies": {
     "markdown-it-include": "2.0.0",
-    "vuepress": "1.7.1"
+    "vuepress": "1.8.0"
   }
 }
