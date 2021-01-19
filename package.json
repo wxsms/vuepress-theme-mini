@@ -21,7 +21,7 @@
     "@vuepress/plugin-back-to-top": "1.8.0",
     "@vuepress/plugin-google-analytics": "1.8.0",
     "date-fns": "2.16.1",
-    "leancloud-storage": "4.9.0",
+    "leancloud-storage": "4.10.0",
     "lodash.chunk": "4.2.0",
     "lodash.debounce": "4.0.8",
     "lodash.reverse": "4.0.1",
