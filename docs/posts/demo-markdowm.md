@@ -1,6 +1,6 @@
 ---
 date: 2020-02-01
-title: Demo Markdown
+title: Markdown Demo
 ---
 
 This is a demo markdown that shows most use cases, click **Read more** below to see entire post.
