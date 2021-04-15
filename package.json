@@ -20,7 +20,7 @@
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.8.2",
     "@vuepress/plugin-google-analytics": "1.8.2",
-    "date-fns": "2.20.3",
+    "date-fns": "2.21.0",
     "leancloud-storage": "4.10.1",
     "lodash.chunk": "4.2.0",
     "lodash.debounce": "4.0.8",
