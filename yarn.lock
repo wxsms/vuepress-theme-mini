@@ -2956,10 +2956,10 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-date-fns@2.20.3:
-  version "2.20.3"
-  resolved "https://registry.npm.taobao.org/date-fns/download/date-fns-2.20.3.tgz?cache=0&sync_timestamp=1618316441831&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdate-fns%2Fdownload%2Fdate-fns-2.20.3.tgz#5a28718edb95a80db96187b25340959867d36bc8"
-  integrity sha1-WihxjtuVqA25YYeyU0CVmGfTa8g=
+date-fns@2.21.0:
+  version "2.21.0"
+  resolved "https://registry.npm.taobao.org/date-fns/download/date-fns-2.21.0.tgz?cache=0&sync_timestamp=1618407309273&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdate-fns%2Fdownload%2Fdate-fns-2.21.0.tgz#4672b8e926d1b37d5353dc14da44b883481ac927"
+  integrity sha1-RnK46SbRs31TU9wU2kS4g0gaySc=
 
 de-indent@^1.0.2:
   version "1.0.2"
