@@ -18,18 +18,18 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "1.8.2",
-    "@vuepress/plugin-google-analytics": "1.8.2",
-    "date-fns": "2.23.0",
-    "leancloud-storage": "4.11.1",
-    "lodash.chunk": "4.2.0",
-    "lodash.debounce": "4.0.8",
-    "lodash.reverse": "4.0.1",
-    "lodash.sortby": "4.7.0",
-    "valine": "1.4.14",
-    "vuepress-plugin-feed": "0.1.9",
-    "vuepress-plugin-flowchart-js": "2.0.2",
-    "vuepress-plugin-sitemap": "2.3.1"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "date-fns": "^2.23.0",
+    "leancloud-storage": "^4.11.1",
+    "lodash.chunk": "^4.2.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.reverse": "^4.0.1",
+    "lodash.sortby": "^4.7.0",
+    "valine": "^1.4.14",
+    "vuepress-plugin-feed": "^0.1.9",
+    "vuepress-plugin-flowchart-js": "^2.0.2",
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "peerDependencies": {
     "vuepress": "^1.7.1"
