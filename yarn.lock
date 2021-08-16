@@ -1241,14 +1241,14 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-back-to-top@1.8.2":
+"@vuepress/plugin-back-to-top@^1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.8.2.tgz#e9794409d1d589e4952b0700291270d2696e6d01"
   integrity sha512-htAf2m8+6cGmYQexWerznGBY10y1E4TBfebYC3Y3wqNjFjvXUmRKcAG/u6Yxvey4OFkQUxbth2ilKi/GlIW8aQ==
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-google-analytics@1.8.2":
+"@vuepress/plugin-google-analytics@^1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.8.2.tgz#96cf65f1f0ecbb3bcf6b0d10089dafe2aea875bc"
   integrity sha512-BMFayLzT2BvXmnhM9mDHw0UPU7J0pH1X9gQA4HmZxOf7f3+atK5eJGsc1Ia/+1FTG2ESvhFLUU/CC3h5arjEJw==
@@ -2936,7 +2936,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-date-fns@2.23.0:
+date-fns@^2.23.0:
   version "2.23.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.23.0.tgz#4e886c941659af0cf7b30fafdd1eaa37e88788a9"
   integrity sha512-5ycpauovVyAk0kXNZz6ZoB9AYMZB4DObse7P3BPWmyEjXNORTI8EJ6X0uaSAq4sCHzM1uajzrkr6HnsLQpxGXA==
@@ -5040,7 +5040,23 @@ leancloud-realtime@^5.0.0-alpha.3, leancloud-realtime@^5.0.0-rc.4:
     protobufjs "^5.0.1"
     uuid "^3.0.0"
 
-leancloud-storage@4.11.1:
+leancloud-storage@^3.0.4:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-3.15.0.tgz#6d3b010a313189985bb69ab08c75c7ad74bd1788"
+  integrity sha512-UbR6pLA0tVYPcY7AND0pey45iFsB2PkIo8Wz0DZ9BabKyqndA1ey2LKzYpFDGNh3ODrmT3fValVn9yY4bgf9Uw==
+  dependencies:
+    debug "^3.1.0"
+    es6-promise "4.2.3"
+    eventemitter3 "^2.0.3"
+    leancloud-realtime "^5.0.0-alpha.3"
+    leancloud-realtime-plugin-live-query "^1.2.0"
+    localstorage-memory "^1.0.1"
+    md5 "^2.0.0"
+    superagent "^3.3.1"
+    underscore "^1.8.3"
+    uuid "^3.3.2"
+
+leancloud-storage@^4.11.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-4.11.1.tgz#9ba7ecf2b083aeabafc92acd6bbafc31426aec74"
   integrity sha512-cNlgCjyZtdGWWUFnnDvvcoiBKjFY13iQT8PfrX0uzRqvm3XmKwkMOJnTE4AuL7fbjL1HsN4oEO2hlV9QOnAmxw==
@@ -5056,22 +5072,6 @@ leancloud-storage@4.11.1:
     leancloud-realtime-plugin-live-query "^1.2.0"
     md5 "^2.0.0"
     promise-timeout "^1.3.0"
-    underscore "^1.8.3"
-    uuid "^3.3.2"
-
-leancloud-storage@^3.0.4:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-3.15.0.tgz#6d3b010a313189985bb69ab08c75c7ad74bd1788"
-  integrity sha512-UbR6pLA0tVYPcY7AND0pey45iFsB2PkIo8Wz0DZ9BabKyqndA1ey2LKzYpFDGNh3ODrmT3fValVn9yY4bgf9Uw==
-  dependencies:
-    debug "^3.1.0"
-    es6-promise "4.2.3"
-    eventemitter3 "^2.0.3"
-    leancloud-realtime "^5.0.0-alpha.3"
-    leancloud-realtime-plugin-live-query "^1.2.0"
-    localstorage-memory "^1.0.1"
-    md5 "^2.0.0"
-    superagent "^3.3.1"
     underscore "^1.8.3"
     uuid "^3.3.2"
 
@@ -5136,7 +5136,7 @@ lodash._reinterpolate@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
-lodash.chunk@4.2.0, lodash.chunk@^4.2.0:
+lodash.chunk@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.chunk/-/lodash.chunk-4.2.0.tgz#66e5ce1f76ed27b4303d8c6512e8d1216e8106bc"
   integrity sha1-ZuXOH3btJ7QwPYxlEujRIW6BBrw=
@@ -5146,7 +5146,7 @@ lodash.clonedeep@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
-lodash.debounce@4.0.8, lodash.debounce@^4.0.8:
+lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
@@ -5176,12 +5176,12 @@ lodash.padstart@^4.6.1:
   resolved "https://registry.yarnpkg.com/lodash.padstart/-/lodash.padstart-4.6.1.tgz#d2e3eebff0d9d39ad50f5cbd1b52a7bce6bb611b"
   integrity sha1-0uPuv/DZ05rVD1y9G1KnvOa7YRs=
 
-lodash.reverse@4.0.1:
+lodash.reverse@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.reverse/-/lodash.reverse-4.0.1.tgz#1f2afedace2e16e660f3aa7c59d3300a6f25d13c"
   integrity sha1-Hyr+2s4uFuZg86p8WdMwCm8l0Tw=
 
-lodash.sortby@4.7.0, lodash.sortby@^4.7.0:
+lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
@@ -8139,7 +8139,7 @@ uuid@^3.0.0, uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-valine@1.4.14:
+valine@^1.4.14:
   version "1.4.14"
   resolved "https://registry.yarnpkg.com/valine/-/valine-1.4.14.tgz#771d103c0b87cb7aa2f0b6a4ad65cae795c92f3b"
   integrity sha512-1gVRXZUDqzTt2I43xivOotXchGdYCCW+Av+laXImzcUVI3DrGR4AQbh3LbDsFpZq+N26u+p+qzB9mjliLYO3YQ==
@@ -8257,7 +8257,7 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-feed@0.1.9:
+vuepress-plugin-feed@^0.1.9:
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-feed/-/vuepress-plugin-feed-0.1.9.tgz#706fc381c1831c110d161b7e892057750c8904da"
   integrity sha512-iOJkR7zPmJAX0TEVdxNsUT07xNQB6lZFpU7DqsYzO01FhaPkMOOVM5Vx5a/iOOuOggAeoI9H9yuah+cRmCImlw==
@@ -8270,14 +8270,14 @@ vuepress-plugin-feed@0.1.9:
     remove-markdown "0.3.0"
     striptags "3.1.1"
 
-vuepress-plugin-flowchart-js@2.0.2:
+vuepress-plugin-flowchart-js@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-flowchart-js/-/vuepress-plugin-flowchart-js-2.0.2.tgz#68c81ebf32f4470c0a461bd4fa93cf67586d8cce"
   integrity sha512-r5Wz00YLukz15jvT8GBbiXoAoOEmhQ2H3xMsyKVdLfKjjGqZN+KpsMceBMIYOIciGdW2nzpbBEU9StNj44+5fA==
   dependencies:
     flowchart.js "1.15.0"
 
-vuepress-plugin-sitemap@2.3.1:
+vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
   integrity sha512-n+8lbukhrKrsI9H/EX0EBgkE1pn85LAQFvQ5dIvrZP4Kz6JxPOPPNTQmZMhahQV1tXbLZQCEN7A1WZH4x+arJQ==
