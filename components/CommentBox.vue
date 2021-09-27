@@ -5,22 +5,22 @@
 </template>
 
 <script>
-  export default {
-    name: 'CommentBox',
-    mounted () {
-      // console.log('mounted')
-      if (typeof window !== 'undefined' && this.$themeConfig.comment) {
-        const Waline = require('@waline/client');
-        new Waline({
-          ...this.$themeConfig.comment,
-          el: '#vcomments',
-        })
-      }
+import Waline from '@waline/client'
+
+export default {
+  name: 'CommentBox',
+  mounted () {
+    if (typeof window !== 'undefined' && this.$themeConfig.comment) {
+      new Waline({
+        ...this.$themeConfig.comment,
+        el: '#vcomments',
+      })
     }
   }
+}
 </script>
 
 <style scoped lang="stylus">
-  .v-comment-container
-    margin: 5rem 0
+.v-comment-container
+  margin: 5rem 0
 </style>
