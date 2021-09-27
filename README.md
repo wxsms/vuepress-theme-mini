@@ -8,7 +8,7 @@
 A minimal blogging theme of VuePress.
 
 * extended from [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-default).
-* With [Valine](https://valine.js.org/) comment system integrated.
+* With [Waline](https://github.com/walinejs/waline) comment system integrated.
 
 ## Example
 
@@ -48,11 +48,10 @@ module.exports = {
       { text: 'home', link: '/' },
       { text: 'about', link: '/about/' }
     ],
-    // valine configurations: https://valine.js.org/configuration.html
-    // note that `el` and `path` are already taken care and will be ignored
-    valine: {
-      appId: '[your appId]',
-      appKey: '[your appKey]'
+    // Waline configurations: https://waline.js.org/guide/client/intro.html
+    // note that `el` are already taken care and will be ignored
+    comment: {
+      serverURL: 'https://xxx'
     }
   },
   // ...

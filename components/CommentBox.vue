@@ -6,16 +6,15 @@
 
 <script>
   export default {
-    name: 'Valine',
+    name: 'CommentBox',
     mounted () {
       // console.log('mounted')
-      if (typeof window !== 'undefined' && this.$themeConfig.valine) {
-        const Valine = require('valine')
+      if (typeof window !== 'undefined' && this.$themeConfig.comment) {
+        const Waline = require('@waline/client');
         window.AV = require('leancloud-storage')
-        new Valine({
-          ...this.$themeConfig.valine,
+        new Waline({
+          ...this.$themeConfig.comment,
           el: '#vcomments',
-          path: this.$route.path
         })
       }
     }

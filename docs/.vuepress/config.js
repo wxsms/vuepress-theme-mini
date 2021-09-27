@@ -17,14 +17,8 @@ module.exports = {
       { text: 'archive', link: '/archive/' },
       { text: 'about', link: '/about/' }
     ],
-    valine: {
-      appId: 'PXFnynf8h6Qnpm9cIWT0BMgG-gzGzoHsz',
-      appKey: 'GshYVR9jngnBj94to63biynJ',
-      placeholder: 'Leave a comment...',
-      verify: false,
-      notify: false,
-      avatar: 'retro',
-      lang: 'en'
+    comment: {
+      serverURL: 'https://blog-api-8pvwfy3l9-wxsms.vercel.app'
     }
   },
   markdown: {
