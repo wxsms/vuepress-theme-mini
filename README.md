@@ -48,7 +48,7 @@ module.exports = {
       { text: 'home', link: '/' },
       { text: 'about', link: '/about/' }
     ],
-    // Waline configurations: https://waline.js.org/guide/client/intro.html
+    // Waline configurations: https://waline.js.org/reference/client.html
     // note:
     // 1. `el` are already taken care and will be ignored
     // 2. `visitor` is supported
