@@ -10,11 +10,14 @@ export default {
   mounted () {
     if (typeof window !== 'undefined' && this.$themeConfig.comment) {
       const Waline = require('@waline/client');
-      new Waline({
+      this.commentBoxInstance = new Waline({
         ...this.$themeConfig.comment,
         el: '#vcomments',
       })
     }
+  },
+  beforeDestroy () {
+    this.commentBoxInstance && this.commentBoxInstance.destroy()
   }
 }
 </script>
