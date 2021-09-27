@@ -11,7 +11,6 @@
       // console.log('mounted')
       if (typeof window !== 'undefined' && this.$themeConfig.comment) {
         const Waline = require('@waline/client');
-        window.AV = require('leancloud-storage')
         new Waline({
           ...this.$themeConfig.comment,
           el: '#vcomments',
