@@ -5,12 +5,11 @@
 </template>
 
 <script>
-import Waline from '@waline/client'
-
 export default {
   name: 'CommentBox',
   mounted () {
     if (typeof window !== 'undefined' && this.$themeConfig.comment) {
+      const Waline = require('@waline/client');
       new Waline({
         ...this.$themeConfig.comment,
         el: '#vcomments',
