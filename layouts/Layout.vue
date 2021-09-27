@@ -8,16 +8,16 @@
 </template>
 
 <script>
-  import CommentBox from '@theme/components/CommentBox'
-  import Page from '@theme/layouts/Page'
-  import RightAnchor from '@theme/components/RightAnchor'
+import CommentBox from '@theme/components/CommentBox'
+import Page from '@theme/layouts/Page'
+import RightAnchor from '@theme/components/RightAnchor'
 
-  export default {
-    components: { Page, CommentBox, RightAnchor },
-    computed: {
-      showRightAnchor () {
-        return this.$page.headers && this.$page.headers.length > 0
-      }
+export default {
+  components: { Page, CommentBox, RightAnchor },
+  computed: {
+    showRightAnchor () {
+      return this.$page.headers && this.$page.headers.length > 0
     }
   }
+}
 </script>

@@ -49,7 +49,9 @@ module.exports = {
       { text: 'about', link: '/about/' }
     ],
     // Waline configurations: https://waline.js.org/guide/client/intro.html
-    // note that `el` are already taken care and will be ignored
+    // note:
+    // 1. `el` are already taken care and will be ignored
+    // 2. `visitor` is supported
     comment: {
       serverURL: 'https://xxx'
     }

@@ -7,7 +7,7 @@
           <li v-for="post in posts" :key="post.key">
             <h3>
               <template v-if="post.frontmatter.date">
-                {{format(new Date(post.frontmatter.date), 'MMM dd, yyyy')}}
+                {{ format(new Date(post.frontmatter.date), 'MMM dd, yyyy') }}
               </template>
             </h3>
             <div class="list-item">
@@ -22,18 +22,18 @@
 </template>
 
 <script>
-  import NavBar from '@theme/components/NavBar'
-  import FooterBar from '@theme/components/FooterBar'
-  import format from 'date-fns/format'
+import NavBar from '@theme/components/NavBar'
+import FooterBar from '@theme/components/FooterBar'
+import format from 'date-fns/format'
 
-  export default {
-    components: { NavBar, FooterBar },
-    computed: {
-      indexSymbol () {
-        return this.$page.frontmatter.articleIndex || this.$page.regularPath
-      },
-      posts () {
-        return this.$site.pages
+export default {
+  components: { NavBar, FooterBar },
+  computed: {
+    indexSymbol () {
+      return this.$page.frontmatter.articleIndex || this.$page.regularPath
+    },
+    posts () {
+      return this.$site.pages
           .filter(page => page.regularPath.indexOf(this.indexSymbol) === 0 && page.frontmatter.layout !== 'ArticleIndex')
           .sort((a, b) => {
             try {
@@ -43,10 +43,10 @@
               return 0
             }
           })
-      }
-    },
-    methods: {
-      format
     }
+  },
+  methods: {
+    format
   }
+}
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="space-footer">
-    <p class="footer-text">© {{year}} {{author}}</p>
+    <p class="footer-text">© {{ year }} {{ author }}</p>
     <p class="footer-text">
       Powered by <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a>
       &nbsp;&middot;&nbsp;
@@ -10,29 +10,29 @@
 </template>
 
 <script>
-  export default {
-    name: 'FooterBar',
-    data () {
-      return {
-        year: new Date().getFullYear()
-      }
-    },
-    computed: {
-      author () {
-        return this.$themeConfig.author
-      }
+export default {
+  name: 'FooterBar',
+  data () {
+    return {
+      year: new Date().getFullYear()
+    }
+  },
+  computed: {
+    author () {
+      return this.$themeConfig.author
     }
   }
+}
 </script>
 
 <style lang="stylus" scoped>
-  .space-footer
-    // text-align: center
-    margin-top: 6rem
-    margin-bottom: 0
+.space-footer
+  // text-align: center
+  margin-top: 6rem
+  margin-bottom: 0
 
-    .footer-text
-      color: #2c3e50 !important
-      font-size: 15px
-      font-weight: lighter
+  .footer-text
+    color: #2c3e50 !important
+    font-size: 15px
+    font-weight: lighter
 </style>

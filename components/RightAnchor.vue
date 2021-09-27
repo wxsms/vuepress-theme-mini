@@ -24,82 +24,82 @@
 <template>
   <ul class="right-anchor">
     <li
-      class="right-anchor-item"
-      v-for="(item, index) in listData"
-      :key="index"
-      @click="itemClick(index, item.slug)"
-      :class="{ active: index === activeIndex, sub: item.level === 3 }"
+        class="right-anchor-item"
+        v-for="(item, index) in listData"
+        :key="index"
+        @click="itemClick(index, item.slug)"
+        :class="{ active: index === activeIndex, sub: item.level === 3 }"
     >{{ item.title }}
     </li>
   </ul>
 </template>
 
 <script>
-  import debounce from 'lodash.debounce'
+import debounce from 'lodash.debounce'
 
-  export default {
-    name: 'right-anchor',
-    data () {
-      return {
-        listData: [],
-        activeIndex: null,
-      }
+export default {
+  name: 'right-anchor',
+  data () {
+    return {
+      listData: [],
+      activeIndex: null,
+    }
+  },
+  watch: {
+    '$page.regularPath': function () {
+      this.filterDataByLevel()
     },
-    watch: {
-      '$page.regularPath': function () {
-        this.filterDataByLevel()
-      },
+  },
+  methods: {
+    itemClick (index, slug) {
+      this.filterDataByLevel()
+      this.activeIndex = index
+      window.scrollTo({
+        top: document.getElementById(slug).offsetTop,
+        behavior: 'smooth',
+      })
     },
-    methods: {
-      itemClick (index, slug) {
-        this.filterDataByLevel()
-        this.activeIndex = index
-        window.scrollTo({
-          top: document.getElementById(slug).offsetTop,
-          behavior: 'smooth',
-        })
-      },
-      filterDataByLevel () {
-        this.listData = []
-        const headers = this.$page.headers || []
-        headers.forEach((item) => {
-          if (item.level === 2 || item.level === 3) {
-            this.listData.push(JSON.parse(JSON.stringify(item)))
-          }
-        })
-        this.$nextTick(() => {
-          this.listData.forEach((item) => {
-            this.getEleById(item.slug).then((el) => {
-              item.offsetTop = el.offsetTop
-            })
+    filterDataByLevel () {
+      this.listData = []
+      const headers = this.$page.headers || []
+      headers.forEach((item) => {
+        if (item.level === 2 || item.level === 3) {
+          this.listData.push(JSON.parse(JSON.stringify(item)))
+        }
+      })
+      this.$nextTick(() => {
+        this.listData.forEach((item) => {
+          this.getEleById(item.slug).then((el) => {
+            item.offsetTop = el.offsetTop
           })
         })
-      },
-      getEleById (id) {
-        return new Promise((resolve) => {
-          const t = setInterval(() => {
-            const el = document.getElementById(id)
-            if (el) {
-              clearInterval(t)
-              resolve(el)
-            }
-          }, 100)
-        })
-      },
-      getScrollTop () {
-        return (
+      })
+    },
+    getEleById (id) {
+      return new Promise((resolve) => {
+        const t = setInterval(() => {
+          const el = document.getElementById(id)
+          if (el) {
+            clearInterval(t)
+            resolve(el)
+          }
+        }, 100)
+      })
+    },
+    getScrollTop () {
+      return (
           window.pageYOffset ||
           document.documentElement.scrollTop ||
           document.body.scrollTop ||
           0
-        )
-      },
+      )
     },
-    mounted () {
-      this.filterDataByLevel()
-      // wait for async contents to be loaded
-      setTimeout(this.filterDataByLevel, 5000)
-      window.addEventListener(
+  },
+  mounted () {
+    this.filterDataByLevel()
+    // wait for async contents to be loaded
+    setTimeout(this.filterDataByLevel, 5000)
+    window.addEventListener(
         'scroll',
         debounce(() => {
           const scrollTop = this.getScrollTop()
@@ -108,54 +108,54 @@
               this.activeIndex = index
           })
         }, 300)
-      )
-    },
-  }
+    )
+  },
+}
 </script>
 
 <style lang="stylus" scoped>
-  .right-anchor {
-    position: fixed;
-    padding: 8px 0;
-    margin: 0;
-    top: $navbarHeight;
-    max-height: 75vh;
-    right: 0;
-    min-width: 132px;
-    border-left: 1px solid #eaecef;
-    background-color: $rightAnchorBgColor;
-    overflow-y: auto;
-    z-index: 1;
+.right-anchor {
+  position: fixed;
+  padding: 8px 0;
+  margin: 0;
+  top: $navbarHeight;
+  max-height: 75vh;
+  right: 0;
+  min-width: 132px;
+  border-left: 1px solid #eaecef;
+  background-color: $rightAnchorBgColor;
+  overflow-y: auto;
+  z-index: 1;
 
-    &-item {
-      display: block;
-      padding: 4px 16px;
-      font-size: 12px;
-      margin-left: -1px;
-      text-decoration: none;
-      display: block;
-      cursor: pointer;
+  &-item {
+    display: block;
+    padding: 4px 16px;
+    font-size: 12px;
+    margin-left: -1px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+
+    &.sub {
+      padding-left: 24px;
+    }
+
+    &:hover,
+    &.active {
+      color: $accentColor;
+      border-left: 1px solid $accentColor;
+      padding-left: 15px;
 
       &.sub {
-        padding-left: 24px;
-      }
-
-      &:hover,
-      &.active {
-        color: $accentColor;
-        border-left: 1px solid $accentColor;
-        padding-left: 15px;
-
-        &.sub {
-          padding-left: 23px;
-        }
+        padding-left: 23px;
       }
     }
   }
+}
 
-  @media (max-width: $MQMobile) {
-    .right-anchor {
-      display: none;
-    }
+@media (max-width: $MQMobile) {
+  .right-anchor {
+    display: none;
   }
+}
 </style>
