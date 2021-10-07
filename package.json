@@ -10,7 +10,8 @@
   "files": [
     "assets",
     "components",
-    "layouts"
+    "layouts",
+    "mixins"
   ],
   "scripts": {
     "test": "exit 0",
