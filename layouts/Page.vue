@@ -2,26 +2,30 @@
   <div class="theme-container no-sidebar">
     <main class="page">
       <div class="theme-default-content content__default">
-        <nav-bar/>
-        <div class="title" v-if="$page.title && $page.frontmatter.title">
-          <h3 v-if="$page.frontmatter.date">{{ format(new Date($page.frontmatter.date), 'MMM dd, yyyy') }}</h3>
+        <nav-bar />
+        <div v-if="$page.title && $page.frontmatter.title" class="title">
+          <h3 v-if="$page.frontmatter.date">
+            {{ format(new Date($page.frontmatter.date), 'MMM dd, yyyy') }}
+          </h3>
           <h1>{{ $page.title }}</h1>
         </div>
-        <Content/>
+        <Content />
         <template v-if="lastUpdated && $page.frontmatter.date">
-          <br/>
+          <br />
           <div class="last-updated">
-            <template v-if="$themeConfig.comment && $themeConfig.comment.visitor">
+            <template
+              v-if="$themeConfig.comment && $themeConfig.comment.visitor"
+            >
               <span class="prefix">READ COUNT:</span>
-              <span class="time waline-visitor-count" :id="$route.path"/>
+              <span :id="$route.path" class="time waline-visitor-count" />
               <span>&emsp;</span>
             </template>
             <span class="prefix">{{ lastUpdatedText }}:</span>
             <span class="time">{{ lastUpdated }}</span>
           </div>
         </template>
-        <slot/>
-        <footer-bar/>
+        <slot />
+        <footer-bar />
       </div>
     </main>
   </div>
@@ -36,10 +40,14 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 export default {
   components: { NavBar, FooterBar },
   computed: {
-    lastUpdated () {
-      return this.$page.lastUpdated ? formatDistanceToNow(new Date(this.$page.lastUpdated), { addSuffix: true }) : ''
+    lastUpdated() {
+      return this.$page.lastUpdated
+        ? formatDistanceToNow(new Date(this.$page.lastUpdated), {
+            addSuffix: true,
+          })
+        : ''
     },
-    lastUpdatedText () {
+    lastUpdatedText() {
       if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
         return this.$themeLocaleConfig.lastUpdated
       }
@@ -47,11 +55,11 @@ export default {
         return this.$site.themeConfig.lastUpdated
       }
       return 'Last Updated'
-    }
+    },
   },
   methods: {
-    format
-  }
+    format,
+  },
 }
 </script>
 

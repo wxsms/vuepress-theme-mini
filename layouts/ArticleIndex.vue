@@ -2,7 +2,7 @@
   <div class="theme-container no-sidebar">
     <main class="page">
       <div class="theme-default-content content__default">
-        <nav-bar/>
+        <nav-bar />
         <ul class="article-list">
           <li v-for="post in posts" :key="post.key">
             <h3>
@@ -11,11 +11,13 @@
               </template>
             </h3>
             <div class="list-item">
-              <router-link :to="post.path" class="title-link">{{ post.title }}</router-link>
+              <router-link :to="post.path" class="title-link">{{
+                post.title
+              }}</router-link>
             </div>
           </li>
         </ul>
-        <footer-bar/>
+        <footer-bar />
       </div>
     </main>
   </div>
@@ -29,24 +31,28 @@ import format from 'date-fns/format'
 export default {
   components: { NavBar, FooterBar },
   computed: {
-    indexSymbol () {
+    indexSymbol() {
       return this.$page.frontmatter.articleIndex || this.$page.regularPath
     },
-    posts () {
+    posts() {
       return this.$site.pages
-          .filter(page => page.regularPath.indexOf(this.indexSymbol) === 0 && page.frontmatter.layout !== 'ArticleIndex')
-          .sort((a, b) => {
-            try {
-              return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
-            } catch (e) {
-              // ignore
-              return 0
-            }
-          })
-    }
+        .filter(
+          (page) =>
+            page.regularPath.indexOf(this.indexSymbol) === 0 &&
+            page.frontmatter.layout !== 'ArticleIndex'
+        )
+        .sort((a, b) => {
+          try {
+            return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+          } catch (e) {
+            // ignore
+            return 0
+          }
+        })
+    },
   },
   methods: {
-    format
-  }
+    format,
+  },
 }
 </script>

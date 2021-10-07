@@ -24,12 +24,13 @@
 <template>
   <ul class="right-anchor">
     <li
-        class="right-anchor-item"
-        v-for="(item, index) in listData"
-        :key="index"
-        @click="itemClick(index, item.slug)"
-        :class="{ active: index === activeIndex, sub: item.level === 3 }"
-    >{{ item.title }}
+      v-for="(item, index) in listData"
+      :key="index"
+      class="right-anchor-item"
+      :class="{ active: index === activeIndex, sub: item.level === 3 }"
+      @click="itemClick(index, item.slug)"
+    >
+      {{ item.title }}
     </li>
   </ul>
 </template>
@@ -38,8 +39,8 @@
 import debounce from 'lodash.debounce'
 
 export default {
-  name: 'right-anchor',
-  data () {
+  name: 'RightAnchor',
+  data() {
     return {
       listData: [],
       activeIndex: null,
@@ -50,8 +51,23 @@ export default {
       this.filterDataByLevel()
     },
   },
+  mounted() {
+    this.filterDataByLevel()
+    // wait for async contents to be loaded
+    setTimeout(this.filterDataByLevel, 5000)
+    window.addEventListener(
+      'scroll',
+      debounce(() => {
+        const scrollTop = this.getScrollTop()
+        this.listData.map((item, index) => {
+          if (item.offsetTop && scrollTop >= item.offsetTop)
+            this.activeIndex = index
+        })
+      }, 300)
+    )
+  },
   methods: {
-    itemClick (index, slug) {
+    itemClick(index, slug) {
       this.filterDataByLevel()
       this.activeIndex = index
       window.scrollTo({
@@ -59,7 +75,7 @@ export default {
         behavior: 'smooth',
       })
     },
-    filterDataByLevel () {
+    filterDataByLevel() {
       this.listData = []
       const headers = this.$page.headers || []
       headers.forEach((item) => {
@@ -75,7 +91,7 @@ export default {
         })
       })
     },
-    getEleById (id) {
+    getEleById(id) {
       return new Promise((resolve) => {
         const t = setInterval(() => {
           const el = document.getElementById(id)
@@ -86,29 +102,14 @@ export default {
         }, 100)
       })
     },
-    getScrollTop () {
+    getScrollTop() {
       return (
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop ||
-          0
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        0
       )
     },
-  },
-  mounted () {
-    this.filterDataByLevel()
-    // wait for async contents to be loaded
-    setTimeout(this.filterDataByLevel, 5000)
-    window.addEventListener(
-        'scroll',
-        debounce(() => {
-          const scrollTop = this.getScrollTop()
-          this.listData.map((item, index) => {
-            if (item.offsetTop && scrollTop >= item.offsetTop)
-              this.activeIndex = index
-          })
-        }, 300)
-    )
   },
 }
 </script>

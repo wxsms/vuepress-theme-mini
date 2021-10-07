@@ -7,18 +7,18 @@
 <script>
 export default {
   name: 'CommentBox',
-  mounted () {
+  mounted() {
     if (typeof window !== 'undefined' && this.$themeConfig.comment) {
-      const Waline = require('@waline/client');
+      const Waline = require('@waline/client')
       this.commentBoxInstance = new Waline({
         ...this.$themeConfig.comment,
         el: '#vcomments',
       })
     }
   },
-  beforeDestroy () {
+  beforeDestroy() {
     this.commentBoxInstance && this.commentBoxInstance.destroy()
-  }
+  },
 }
 </script>
 
