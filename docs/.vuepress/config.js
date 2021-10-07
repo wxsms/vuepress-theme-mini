@@ -3,6 +3,9 @@ const path = require('path')
 module.exports = {
   title: 'vuepress-theme-mini',
   description: 'A minimal blogging theme of VuePress.',
+  shouldPrefetch: (name) => {
+    return name.includes('vendors~') || name.includes('layout-')
+  },
   theme: path.join(__dirname, '..', '..'),
   themeConfig: {
     hostname: 'https://vuepress-theme-mini.wxsm.space',

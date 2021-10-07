@@ -1,71 +1,57 @@
 <template>
-  <div class="theme-container no-sidebar">
-    <main class="page">
-      <div class="theme-default-content content__default">
-        <nav-bar />
-        <Content />
-        <ul class="article-list article-list-with-excerpt">
-          <li v-for="post in postChunks[page - 1]" :key="post.key">
-            <h3>
-              <template v-if="post.frontmatter.date">
-                {{ format(new Date(post.frontmatter.date), 'MMM dd, yyyy') }}
-              </template>
-            </h3>
-            <div class="list-item">
+  <page>
+    <ul class="article-list article-list-with-excerpt">
+      <li v-for="post in postChunks[page - 1]" :key="post.key">
+        <h3>
+          <template v-if="post.frontmatter.date">
+            {{ format(new Date(post.frontmatter.date), 'MMM dd, yyyy') }}
+          </template>
+        </h3>
+        <div class="list-item">
+          <router-link :to="post.path" class="title-link" v-text="post.title" />
+          <template v-if="post.excerpt">
+            <div class="excerpt" v-html="post.excerpt"></div>
+            <div class="read-more">
               <router-link
                 :to="post.path"
-                class="title-link"
-                v-text="post.title"
+                class="read-more-link"
+                v-text="'Read more...'"
               />
-              <template v-if="post.excerpt">
-                <div class="excerpt" v-html="post.excerpt"></div>
-                <div class="read-more">
-                  <router-link
-                    :to="post.path"
-                    class="read-more-link"
-                    v-text="'Read more...'"
-                  />
-                </div>
-              </template>
             </div>
-          </li>
-        </ul>
-
-        <div class="article-page-nav">
-          <p class="inner">
-            <span v-if="page > 1" class="prev"
-              >←&nbsp;
-              <router-link
-                class="prev"
-                :to="`${$page.regularPath}?page=${page - 1}`"
-                v-text="'Newer'"
-              />
-            </span>
-            <span v-if="page < postChunks.length" class="next">
-              <router-link
-                :to="`${$page.regularPath}?page=${page + 1}`"
-                v-text="'Older'"
-              />
-              &nbsp;→
-            </span>
-          </p>
+          </template>
         </div>
-
-        <footer-bar />
-      </div>
-    </main>
-  </div>
+      </li>
+    </ul>
+    <div class="article-page-nav">
+      <p class="inner">
+        <span v-if="page > 1" class="prev"
+          >←&nbsp;
+          <router-link
+            class="prev"
+            :to="`${$page.regularPath}?page=${page - 1}`"
+            v-text="'Newer'"
+          />
+        </span>
+        <span v-if="page < postChunks.length" class="next">
+          <router-link
+            :to="`${$page.regularPath}?page=${page + 1}`"
+            v-text="'Older'"
+          />
+          &nbsp;→
+        </span>
+      </p>
+    </div>
+  </page>
 </template>
 
 <script>
-import NavBar from '@theme/components/NavBar'
-import FooterBar from '@theme/components/FooterBar'
+import Page from '@theme/layouts/Page'
 import format from 'date-fns/format'
 import chunk from 'lodash.chunk'
 import postsMixin from '../mixins/posts.mixin'
 
 export default {
-  components: { NavBar, FooterBar },
+  components: { Page },
   mixins: [postsMixin],
   data() {
     return {
