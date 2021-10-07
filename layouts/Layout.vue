@@ -11,12 +11,14 @@
 </template>
 
 <script>
-import CommentBox from '@theme/components/CommentBox'
 import Page from '@theme/layouts/Page'
-import RightAnchor from '@theme/components/RightAnchor'
 
 export default {
-  components: { Page, CommentBox, RightAnchor },
+  components: {
+    Page,
+    CommentBox: () => import('@theme/components/CommentBox'),
+    RightAnchor: () => import('@theme/components/RightAnchor'),
+  },
   computed: {
     showRightAnchor() {
       return this.$page.headers && this.$page.headers.length > 0
