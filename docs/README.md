@@ -1,4 +1,3 @@
 ---
-layout: ArticleWithExcerptPager
-
+layout: Pager
 ---

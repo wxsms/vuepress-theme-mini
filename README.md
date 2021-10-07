@@ -72,13 +72,13 @@ Default layout for normal articles that including a comment area.
 
 Almost the same as default but without comment.
 
-### ArticleIndex
+### Archive
 
-Display an article archive base on the folder structure or `articleIndex` param in YAML frontmatter.
+Display an article archive base on the folder structure or `archive` param in YAML frontmatter.
 
-For example: if you place a `README.md` with `layout: ArticleIndex` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter (Regex is supported).
+For example: if you place a `README.md` with `layout: Archive` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `postsDir: '/posts'` frontmatter (Regex is supported).
 
-### ArticleWithExcerptPager
+### Pager
 
 Display and article pager with excerpts, you probably want to use this on the home page.
 

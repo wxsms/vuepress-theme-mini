@@ -62,9 +62,11 @@ import NavBar from '@theme/components/NavBar'
 import FooterBar from '@theme/components/FooterBar'
 import format from 'date-fns/format'
 import chunk from 'lodash.chunk'
+import postsMixin from '../mixins/posts.mixin'
 
 export default {
   components: { NavBar, FooterBar },
+  mixins: [postsMixin],
   data() {
     return {
       page: 1,
@@ -73,27 +75,6 @@ export default {
   computed: {
     pageSize() {
       return 10
-    },
-    indexSymbol() {
-      return this.$page.frontmatter.articleIndex || this.$page.regularPath
-    },
-    posts() {
-      return this.$site.pages
-        .filter((page) => {
-          const included = page.regularPath.indexOf(this.indexSymbol) === 0
-          const isPost =
-            page.frontmatter.layout === 'Layout' ||
-            typeof page.frontmatter.layout === 'undefined'
-          return included && isPost
-        })
-        .sort((a, b) => {
-          try {
-            return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
-          } catch (e) {
-            // ignore
-            return 0
-          }
-        })
     },
     postChunks() {
       return chunk(this.posts, this.pageSize)

@@ -27,33 +27,11 @@
 import NavBar from '@theme/components/NavBar'
 import FooterBar from '@theme/components/FooterBar'
 import format from 'date-fns/format'
+import postsMixin from '../mixins/posts.mixin'
 
 export default {
   components: { NavBar, FooterBar },
-  computed: {
-    posts() {
-      const reg = this.$page.frontmatter.articleIndex
-        ? new RegExp(this.$page.frontmatter.articleIndex)
-        : null
-
-      return this.$site.pages
-        .filter(
-          (page) =>
-            (reg
-              ? reg.test(page.regularPath)
-              : page.regularPath.indexOf(this.$page.regularPath) >= 0) &&
-            page.frontmatter.layout !== 'ArticleIndex'
-        )
-        .sort((a, b) => {
-          try {
-            return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
-          } catch (e) {
-            // ignore
-            return 0
-          }
-        })
-    },
-  },
+  mixins: [postsMixin],
   methods: {
     format,
   },
