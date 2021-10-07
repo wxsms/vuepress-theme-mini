@@ -76,7 +76,7 @@ Almost the same as default but without comment.
 
 Display an article archive base on the folder structure or `articleIndex` param in YAML frontmatter.
 
-For example: if you place a `README.md` with `layout: ArticleIndex` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter.
+For example: if you place a `README.md` with `layout: ArticleIndex` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter (Regex is supported).
 
 ### ArticleWithExcerptPager
 

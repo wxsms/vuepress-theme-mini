@@ -31,14 +31,17 @@ import format from 'date-fns/format'
 export default {
   components: { NavBar, FooterBar },
   computed: {
-    indexSymbol() {
-      return this.$page.frontmatter.articleIndex || this.$page.regularPath
-    },
     posts() {
+      const reg = this.$page.frontmatter.articleIndex
+        ? new RegExp(this.$page.frontmatter.articleIndex)
+        : null
+
       return this.$site.pages
         .filter(
           (page) =>
-            page.regularPath.indexOf(this.indexSymbol) === 0 &&
+            (reg
+              ? reg.test(page.regularPath)
+              : page.regularPath.indexOf(this.$page.regularPath) >= 0) &&
             page.frontmatter.layout !== 'ArticleIndex'
         )
         .sort((a, b) => {

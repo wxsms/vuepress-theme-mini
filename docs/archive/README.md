@@ -1,4 +1,4 @@
 ---
 layout: ArticleIndex
-articleIndex: /posts
+articleIndex: ^/posts/.
 ---
