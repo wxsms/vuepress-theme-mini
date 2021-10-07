@@ -8,10 +8,8 @@
             :to="item.link"
             class="site-link"
             v-text="item.text"
-          ></router-link>
-          <span v-if="index !== nav.length - 1"
-            >&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span
-          >
+          ></router-link
+          ><span v-if="index !== nav.length - 1" class="dot">&middot;</span>
         </span>
       </template>
     </div>
@@ -41,4 +39,9 @@ export default {
 <style lang="stylus">
 @import "../assets/stylesheets/main.styl"
 @import "../assets/stylesheets/article.styl"
+</style>
+
+<style lang="stylus" scoped>
+.dot
+  margin: 0 6px;
 </style>
