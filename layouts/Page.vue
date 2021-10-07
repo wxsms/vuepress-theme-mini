@@ -75,7 +75,7 @@ export default {
     width: 100px
     flex-shrink: 0
     margin: 0 0 15px 0
-    font-weight: lighter
+    font-weight: light
     text-transform: uppercase
 
   h1

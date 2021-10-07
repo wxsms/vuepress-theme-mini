@@ -9,6 +9,7 @@ A minimal blogging theme of VuePress.
 
 * extended from [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-default).
 * With [Waline](https://github.com/walinejs/waline) comment system integrated.
+* Pure CSS darkmode solution.
 
 ## Example
 
@@ -71,11 +72,11 @@ Default layout for normal articles that including a comment area.
 
 Almost the same as default but without comment.
 
-### ArticleList
+### ArticleIndex
 
 Display an article archive base on the folder structure or `articleIndex` param in YAML frontmatter.
 
-For example: if you place a `README.md` with `layout: ArticleList` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter.
+For example: if you place a `README.md` with `layout: ArticleIndex` inside `posts` folder, then it will content all articles inside `posts` folder. You can also place it under root folder with `articleIndex: '/posts'` frontmatter.
 
 ### ArticleWithExcerptPager
 

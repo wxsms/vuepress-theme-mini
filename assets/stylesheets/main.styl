@@ -5,7 +5,7 @@ img + span
     display: none;
 
 img + .icon.outbound
-    display: none;
+  display: none;
 
 
 body
@@ -28,13 +28,13 @@ body
     text-decoration none !important
     letter-spacing 3px
     font-size 20px
-    font-weight lighter
+    font-weight light
 
   .site-link
     color #2c3e50 !important
     text-decoration none !important
     font-size 15px
-    font-weight lighter
+    font-weight light
 
   .links
     margin-top 20px
@@ -58,3 +58,11 @@ body
 @media screen and (max-width: 1199px)
   .right-anchor
     display none !important
+
+@media (prefers-color-scheme: dark)
+  html
+    filter: invert(100%) hue-rotate(180deg)
+
+  img, video, svg, div[class*="language-"]
+    filter: invert(100%) hue-rotate(180deg)
+    opacity: .8
