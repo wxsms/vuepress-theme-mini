@@ -6,19 +6,19 @@ module.exports = (options, ctx) => {
 
   if (options.hostname) {
     plugins.sitemap = {
-      hostname: options.hostname
+      hostname: options.hostname,
     }
 
     plugins.feed = {
       canonical_base: options.hostname,
       posts_directories: options.posts_directories || ['/posts'],
-      sort: entries => reverse(sortBy(entries, 'date'))
+      sort: (entries) => reverse(sortBy(entries, 'date')),
     }
   }
 
   if (options.ga) {
     plugins['@vuepress/google-analytics'] = {
-      'ga': options.ga
+      ga: options.ga,
     }
   }
 
@@ -32,6 +32,6 @@ module.exports = (options, ctx) => {
 
   return {
     extend: '@vuepress/theme-default',
-    plugins
+    plugins,
   }
 }

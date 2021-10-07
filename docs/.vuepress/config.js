@@ -21,6 +21,7 @@ module.exports = {
       serverURL: 'https://blog-api-8pvwfy3l9-wxsms.vercel.app',
       avatar: 'retro',
       visitor: true,
+      lang: 'en'
     }
   },
   markdown: {

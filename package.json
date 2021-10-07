@@ -15,7 +15,9 @@
   "scripts": {
     "test": "exit 0",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "lint": "eslint --ext .js,.vue .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
@@ -35,6 +37,15 @@
   },
   "devDependencies": {
     "markdown-it-include": "2.0.0",
-    "vuepress": "1.8.2"
+    "vuepress": "1.8.2",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-html": "6.2.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-vue": "7.19.1",
+    "prettier": "2.4.1"
   }
 }
