@@ -1,6 +1,7 @@
 ---
 date: 2020-03-01
 title: vuepress-theme-mini
+readMore: false
 ---
 
 **A minimal blogging theme of VuePress.**

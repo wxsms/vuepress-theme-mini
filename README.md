@@ -82,6 +82,9 @@ For example: if you place a `README.md` with `layout: Archive` inside `posts` fo
 
 Display and article pager with excerpts, you probably want to use this on the home page.
 
+* `postsDir` is also supported here
+* add `readMore: false` front matter if you don't want the read more button to appear for specify post
+
 ## Changelog
 
 See [releases](https://github.com/wxsms/vuepress-theme-mini/releases).

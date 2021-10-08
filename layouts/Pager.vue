@@ -11,7 +11,7 @@
           <router-link :to="post.path" class="title-link" v-text="post.title" />
           <template v-if="post.excerpt">
             <div class="excerpt" v-html="post.excerpt"></div>
-            <div class="read-more">
+            <div class="read-more" v-if="post.frontmatter.readMore !== false">
               <router-link
                 :to="post.path"
                 class="read-more-link"
