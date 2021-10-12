@@ -17,7 +17,9 @@ export default {
     }
   },
   beforeDestroy() {
-    this.commentBoxInstance && this.commentBoxInstance.destroy()
+    if (this.commentBoxInstance) {
+      this.commentBoxInstance.destroy()
+    }
   },
 }
 </script>

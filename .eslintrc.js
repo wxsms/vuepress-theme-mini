@@ -22,6 +22,7 @@ module.exports = {
     'arrow-parens': 0,
     // allow async-await
     'generator-star-spacing': 0,
+    'vue/no-v-html': 0,
     // allow during development
     'no-debugger': allowInDevelopment(),
     'no-unused-expressions': allowInDevelopment(),
