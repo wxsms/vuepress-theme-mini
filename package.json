@@ -44,7 +44,7 @@
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-promise": "5.1.1",
     "eslint-plugin-vue": "7.20.0",
     "markdown-it-include": "2.0.0",
     "prettier": "2.4.1",
