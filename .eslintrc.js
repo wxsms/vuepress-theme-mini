@@ -26,5 +26,6 @@ module.exports = {
     // allow during development
     'no-debugger': allowInDevelopment(),
     'no-unused-expressions': allowInDevelopment(),
+    'vue/multi-word-component-names': 0,
   },
 }
