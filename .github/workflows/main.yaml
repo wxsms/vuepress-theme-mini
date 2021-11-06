@@ -9,25 +9,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: c-hive/gha-yarn-cache@v2
-      - run: yarn --frozen-lockfile
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+      - run: pnpm i --frozen-lockfile
       - name: Lint
         run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: c-hive/gha-yarn-cache@v2
-      - run: yarn --frozen-lockfile
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+      - run: pnpm i --frozen-lockfile
       - name: Unit tests
         run: npm run test
   docs_build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: c-hive/gha-yarn-cache@v2
-      - run: yarn --frozen-lockfile
-        env:
-          PUPPETEER_SKIP_DOWNLOAD: true
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+      - run: pnpm i --frozen-lockfile
       - name: Build docs
         run: npm run docs:build

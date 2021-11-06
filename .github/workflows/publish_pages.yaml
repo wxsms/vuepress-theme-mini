@@ -9,13 +9,14 @@ jobs:
   deploy_gh_pages:
     runs-on: ubuntu-latest
     steps:
-      # checkout & yarn
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
           ref: master
-      - uses: c-hive/gha-yarn-cache@v2
-      - run: yarn --frozen-lockfile
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+      - run: pnpm i --frozen-lockfile
       # build
       - run: npm run docs:build
       - name: GitHub Pages

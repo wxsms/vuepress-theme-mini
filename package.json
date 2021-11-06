@@ -18,7 +18,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "lint": "eslint --ext .js,.vue .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "pnpm run lint -- --fix"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",

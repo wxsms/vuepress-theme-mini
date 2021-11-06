@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: c-hive/gha-yarn-cache@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-      - run: yarn --frozen-lockfile
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+      - run: pnpm i --frozen-lockfile
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
