@@ -38,7 +38,7 @@
     "vuepress": "^1.7.1"
   },
   "devDependencies": {
-    "eslint": "8.1.0",
+    "eslint": "8.2.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-html": "6.2.0",
     "eslint-plugin-import": "2.25.2",
