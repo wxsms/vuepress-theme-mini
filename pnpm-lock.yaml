@@ -8,7 +8,7 @@ specifiers:
   eslint: 8.2.0
   eslint-config-prettier: 8.3.0
   eslint-plugin-html: 6.2.0
-  eslint-plugin-import: 2.25.2
+  eslint-plugin-import: 2.25.3
   eslint-plugin-node: 11.1.0
   eslint-plugin-prettier: 4.0.0
   eslint-plugin-promise: 5.1.1
@@ -43,7 +43,7 @@ devDependencies:
   eslint: mirrors.tencent.com/eslint/8.2.0
   eslint-config-prettier: 8.3.0_eslint@8.2.0
   eslint-plugin-html: 6.2.0
-  eslint-plugin-import: mirrors.tencent.com/eslint-plugin-import/2.25.2_eslint@8.2.0
+  eslint-plugin-import: 2.25.3_eslint@8.2.0
   eslint-plugin-node: 11.1.0_eslint@8.2.0
   eslint-plugin-prettier: 4.0.0_307f015733298e29da9050ea0cee5b9e
   eslint-plugin-promise: 5.1.1_eslint@8.2.0
@@ -2161,7 +2161,7 @@ packages:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
     requiresBuild: true
     dependencies:
-      file-uri-to-path: mirrors.tencent.com/file-uri-to-path/1.0.0
+      file-uri-to-path: 1.0.0
     dev: true
     optional: true
 
@@ -2210,7 +2210,7 @@ packages:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
       balanced-match: 1.0.2
-      concat-map: mirrors.tencent.com/concat-map/0.0.1
+      concat-map: 0.0.1
     dev: true
 
   /braces/2.3.2:
@@ -2712,6 +2712,10 @@ packages:
       on-headers: 1.0.2
       safe-buffer: 5.1.2
       vary: 1.1.2
+    dev: true
+
+  /concat-map/0.0.1:
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
 
   /concat-stream/1.6.2:
@@ -3620,6 +3624,28 @@ packages:
       htmlparser2: 7.1.2
     dev: true
 
+  /eslint-plugin-import/2.25.3_eslint@8.2.0:
+    resolution: {integrity: sha512-RzAVbby+72IB3iOEL8clzPLzL3wpDrlwjsTBAQXgyp5SeTqqY+0bFubwuo+y/HLhNZcXV4XqTBO4LGsfyHIDXg==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
+    dependencies:
+      array-includes: 3.1.4
+      array.prototype.flat: 1.2.5
+      debug: 2.6.9
+      doctrine: 2.1.0
+      eslint: mirrors.tencent.com/eslint/8.2.0
+      eslint-import-resolver-node: 0.3.6
+      eslint-module-utils: 2.7.1
+      has: 1.0.3
+      is-core-module: 2.8.0
+      is-glob: 4.0.3
+      minimatch: 3.0.4
+      object.values: 1.1.5
+      resolve: 1.20.0
+      tsconfig-paths: 3.11.0
+    dev: true
+
   /eslint-plugin-node/11.1.0_eslint@8.2.0:
     resolution: {integrity: sha512-oUwtPJ1W0SKD0Tr+wqu92c5xuCeQqB3hSCHasn/ZgjFdA9iDGNkNf2Zi9ztY7X+hNuMib23LNGRm6+uN+KLE3g==}
     engines: {node: '>=8.10.0'}
@@ -3976,6 +4002,12 @@ packages:
       schema-utils: 1.0.0
       webpack: 4.46.0
     dev: true
+
+  /file-uri-to-path/1.0.0:
+    resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /fill-range/4.0.0:
     resolution: {integrity: sha1-1USBHUKPmOsGpj3EAtJAPDKMOPc=}
@@ -8728,12 +8760,6 @@ packages:
       type-is: 1.6.18
     dev: true
 
-  mirrors.tencent.com/concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/concat-map/-/concat-map-0.0.1.tgz}
-    name: concat-map
-    version: 0.0.1
-    dev: true
-
   mirrors.tencent.com/content-disposition/0.5.3:
     resolution: {integrity: sha512-ExO0774ikEObIAEV9kDo50o+79VCUdEB6n6lzKgGwupcVeRlhrj3qGAfwq8G6uBJjkqLrhT0qEYFcWng8z1z0g==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/content-disposition/-/content-disposition-0.5.3.tgz}
     name: content-disposition
@@ -8770,31 +8796,6 @@ packages:
     dependencies:
       mdn-data: mirrors.tencent.com/mdn-data/2.0.4
       source-map: 0.6.1
-    dev: true
-
-  mirrors.tencent.com/eslint-plugin-import/2.25.2_eslint@8.2.0:
-    resolution: {integrity: sha512-qCwQr9TYfoBHOFcVGKY9C9unq05uOxxdklmBXLVvcwo68y5Hta6/GzCZEMx2zQiu0woKNEER0LE7ZgaOfBU14g==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-plugin-import/-/eslint-plugin-import-2.25.2.tgz}
-    id: mirrors.tencent.com/eslint-plugin-import/2.25.2
-    name: eslint-plugin-import
-    version: 2.25.2
-    engines: {node: '>=4'}
-    peerDependencies:
-      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
-    dependencies:
-      array-includes: 3.1.4
-      array.prototype.flat: 1.2.5
-      debug: 2.6.9
-      doctrine: 2.1.0
-      eslint: mirrors.tencent.com/eslint/8.2.0
-      eslint-import-resolver-node: 0.3.6
-      eslint-module-utils: 2.7.1
-      has: 1.0.3
-      is-core-module: 2.8.0
-      is-glob: 4.0.3
-      minimatch: 3.0.4
-      object.values: 1.1.5
-      resolve: 1.20.0
-      tsconfig-paths: 3.11.0
     dev: true
 
   mirrors.tencent.com/eslint/8.2.0:
@@ -8845,14 +8846,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  mirrors.tencent.com/file-uri-to-path/1.0.0:
-    resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz}
-    name: file-uri-to-path
-    version: 1.0.0
-    requiresBuild: true
-    dev: true
-    optional: true
 
   mirrors.tencent.com/forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/forwarded/-/forwarded-0.2.0.tgz}
