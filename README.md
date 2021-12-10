@@ -11,10 +11,9 @@ A minimal blogging theme of VuePress.
 * With [Waline](https://github.com/walinejs/waline) comment system integrated.
 * Pure CSS darkmode solution.
 
-## Example
+## Demo
 
 * [https://vuepress-theme-mini.wxsm.space](https://vuepress-theme-mini.wxsm.space)
-* [https://wxsm.space](https://wxsm.space/)
 
 ## Install
 
