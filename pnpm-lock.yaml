@@ -12,7 +12,7 @@ specifiers:
   eslint-plugin-node: 11.1.0
   eslint-plugin-prettier: 4.0.0
   eslint-plugin-promise: 6.0.0
-  eslint-plugin-vue: 8.2.0
+  eslint-plugin-vue: 8.3.0
   lodash.chunk: ^4.2.0
   lodash.debounce: ^4.0.8
   lodash.reverse: ^4.0.1
@@ -47,7 +47,7 @@ devDependencies:
   eslint-plugin-node: 11.1.0_eslint@8.6.0
   eslint-plugin-prettier: 4.0.0_1c588f61426b1faf18812943f1678311
   eslint-plugin-promise: 6.0.0_eslint@8.6.0
-  eslint-plugin-vue: 8.2.0_eslint@8.6.0
+  eslint-plugin-vue: 8.3.0_eslint@8.6.0
   markdown-it-include: 2.0.0
   prettier: 2.5.1
   vuepress: 1.9.5
@@ -4063,8 +4063,8 @@ packages:
       eslint: 8.6.0
     dev: true
 
-  /eslint-plugin-vue/8.2.0_eslint@8.6.0:
-    resolution: {integrity: sha512-cLIdTuOAMXyHeQ4drYKcZfoyzdwdBpH279X8/N0DgmotEI9yFKb5O/cAgoie/CkQZCH/MOmh0xw/KEfS90zY2A==}
+  /eslint-plugin-vue/8.3.0_eslint@8.6.0:
+    resolution: {integrity: sha512-IIuLHw4vQxGlHcoP2dG6t/2OVdQf2qoyAzEGAxreU1afZOHGA7y3TWq8I+r3ZA6Wjs6xpeUWGHlT31QGr9Rb5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -4179,15 +4179,6 @@ packages:
       v8-compile-cache: 2.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /espree/9.2.0:
-    resolution: {integrity: sha512-oP3utRkynpZWF/F2x/HZJ+AGtnIclaR7z1pYPxy7NYM2fSO6LgK/Rkny8anRSPK/VwEA1eqm2squui0T7ZMOBg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      acorn: 8.7.0
-      acorn-jsx: 5.3.2_acorn@8.7.0
-      eslint-visitor-keys: 3.1.0
     dev: true
 
   /espree/9.3.0:
@@ -8827,7 +8818,7 @@ packages:
       eslint: 8.6.0
       eslint-scope: 6.0.0
       eslint-visitor-keys: 3.1.0
-      espree: 9.2.0
+      espree: 9.3.0
       esquery: 1.4.0
       lodash: 4.17.21
       semver: 7.3.5
