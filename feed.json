@@ -1,0 +1,109 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "vuepress-theme-mini",
+    "home_page_url": "https://vuepress-theme-mini.wxsm.space",
+    "feed_url": "https://vuepress-theme-mini.wxsm.space/feed.json",
+    "description": "A minimal blogging theme of VuePress.",
+    "items": [
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/vuepress-theme-mini.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/vuepress-theme-mini.html",
+            "title": "vuepress-theme-mini",
+            "summary": "A minimal blogging theme of VuePress.\nGitHub: wxsms/vuepress-theme-mini\nNPM: vuepress-theme-mini\nyarn add vuepress-theme-mini -D\n\n// .vuepress/config.js\nmodule.exports = {\n  theme: 'mini'\n}\n",
+            "date_modified": "2020-03-01T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/demo-markdowm.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/demo-markdowm.html",
+            "title": "Markdown Demo",
+            "summary": "This is a demo markdown that shows most use cases, click Read more below to see entire post.\nh1 Heading 😎\nh2 Heading\nh3 Heading\nh4 Heading\nh5 Heading\nh6 Heading",
+            "image": "https://octodex.github.com/images/minion.png",
+            "date_modified": "2020-02-01T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/demo-flowchart.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/demo-flowchart.html",
+            "title": "Flowchart Demo",
+            "summary": "\nThis is a demo markdown that shows some examples of flowchart, click Read more below to see entire post.",
+            "image": "https://static.wxsm.space/others/vue-plugin-flowchart-preview.png",
+            "date_modified": "2020-01-31T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-1.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-1.html",
+            "title": "Dummy post 1",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-22T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-2.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-2.html",
+            "title": "Dummy post 2",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-21T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-3.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-3.html",
+            "title": "Dummy post 3",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-20T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-4.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-4.html",
+            "title": "Dummy post 4",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-19T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-5.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-5.html",
+            "title": "Dummy post 5",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-18T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-6.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-6.html",
+            "title": "Dummy post 6",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-17T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-7.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-7.html",
+            "title": "Dummy post 7",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-16T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-8.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-8.html",
+            "title": "Dummy post 8",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-15T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-9.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-9.html",
+            "title": "Dummy post 9",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-14T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-10.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-10.html",
+            "title": "Dummy post 10",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-13T00:00:00.000Z"
+        },
+        {
+            "id": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-11.html",
+            "url": "https://vuepress-theme-mini.wxsm.space/posts/dummy-post-11.html",
+            "title": "Dummy post 11",
+            "summary": "Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.",
+            "date_modified": "2020-01-12T00:00:00.000Z"
+        }
+    ]
+}

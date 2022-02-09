@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>vuepress-theme-mini</title>
+        <link>https://vuepress-theme-mini.wxsm.space</link>
+        <description>A minimal blogging theme of VuePress.</description>
+        <lastBuildDate>Wed, 09 Feb 2022 07:04:25 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <atom:link href="https://vuepress-theme-mini.wxsm.space/feed.atom" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[vuepress-theme-mini]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/vuepress-theme-mini.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/vuepress-theme-mini.html</guid>
+            <pubDate>Sun, 01 Mar 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[A minimal blogging theme of VuePress.
+GitHub: wxsms/vuepress-theme-mini
+NPM: vuepress-theme-mini
+yarn add vuepress-theme-mini -D
+
+// .vuepress/config.js
+module.exports = {
+  theme: 'mini'
+}
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Markdown Demo]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/demo-markdowm.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/demo-markdowm.html</guid>
+            <pubDate>Sat, 01 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is a demo markdown that shows most use cases, click Read more below to see entire post.
+h1 Heading 😎
+h2 Heading
+h3 Heading
+h4 Heading
+h5 Heading
+h6 Heading]]></description>
+            <enclosure url="https://octodex.github.com/images/minion.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Flowchart Demo]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/demo-flowchart.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/demo-flowchart.html</guid>
+            <pubDate>Fri, 31 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+This is a demo markdown that shows some examples of flowchart, click Read more below to see entire post.]]></description>
+            <enclosure url="https://static.wxsm.space/others/vue-plugin-flowchart-preview.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 1]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-1.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-1.html</guid>
+            <pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 2]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-2.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-2.html</guid>
+            <pubDate>Tue, 21 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 3]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-3.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-3.html</guid>
+            <pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 4]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-4.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-4.html</guid>
+            <pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 5]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-5.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-5.html</guid>
+            <pubDate>Sat, 18 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 6]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-6.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-6.html</guid>
+            <pubDate>Fri, 17 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 7]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-7.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-7.html</guid>
+            <pubDate>Thu, 16 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 8]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-8.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-8.html</guid>
+            <pubDate>Wed, 15 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 9]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-9.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-9.html</guid>
+            <pubDate>Tue, 14 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 10]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-10.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-10.html</guid>
+            <pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dummy post 11]]></title>
+            <link>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-11.html</link>
+            <guid>https://vuepress-theme-mini.wxsm.space/posts/dummy-post-11.html</guid>
+            <pubDate>Sun, 12 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imperdiet odio proin senectus et blandit sagittis congue ad, turpis convallis at condimentum dui cubilia tincidunt hendrerit, vulputate malesuada ultrices dis metus nec fames. Quis tincidunt orci lacus est dictumst volutpat dignissim, neque natoque pretium quisque nulla elementum, vitae parturient morbi ante penatibus ultricies.]]></description>
+        </item>
+    </channel>
+</rss>

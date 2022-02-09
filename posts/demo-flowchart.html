@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flowchart Demo | vuepress-theme-mini</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="alternate" type="application/rss+xml" href="https://vuepress-theme-mini.wxsm.space/rss.xml" title="vuepress-theme-mini RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://vuepress-theme-mini.wxsm.space/feed.atom" title="vuepress-theme-mini Atom Feed">
+    <link rel="alternate" type="application/json" href="https://vuepress-theme-mini.wxsm.space/feed.json" title="vuepress-theme-mini JSON Feed">
+    <meta name="description" content="A minimal blogging theme of VuePress.">
+    
+    <link rel="preload" href="/assets/css/0.styles.38baa323.css" as="style"><link rel="preload" href="/assets/js/app.ec7dad74.js" as="script"><link rel="preload" href="/assets/js/layout-Layout.b31b3d0d.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Archive~layout-Layout~layout-Page~layout-Pager.0ac03be1.js" as="script"><link rel="preload" href="/assets/js/page-b2f58216.bc22399b.js" as="script"><link rel="prefetch" href="/assets/js/layout-Archive.bbe8538b.js"><link rel="prefetch" href="/assets/js/layout-NotFound.df634024.js"><link rel="prefetch" href="/assets/js/layout-Page.581109e0.js"><link rel="prefetch" href="/assets/js/layout-Pager.03267a87.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.4f281539.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38baa323.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-0fa85fa0><main class="page" data-v-0fa85fa0><div class="theme-default-content content__default" data-v-0fa85fa0><div class="space-header" data-v-db4cde34 data-v-0fa85fa0><a href="/" class="home-link router-link-active" data-v-db4cde34>vuepress-theme-mini</a> <div class="links" data-v-db4cde34><span data-v-db4cde34><a href="/" class="site-link router-link-active" data-v-db4cde34>home</a><span class="dot" data-v-db4cde34>·</span></span><span data-v-db4cde34><a href="/archive/" class="site-link" data-v-db4cde34>archive</a><span class="dot" data-v-db4cde34>·</span></span><span data-v-db4cde34><a href="/about/" class="site-link" data-v-db4cde34>about</a><!----></span></div> <div class="search-box-container" data-v-db4cde34><div class="search-box" data-v-db4cde34><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div> <div class="title" data-v-0fa85fa0><h3 data-v-0fa85fa0>
+          Jan 31, 2020
+        </h3> <h1 data-v-0fa85fa0>Flowchart Demo</h1></div> <div class="content__default" data-v-0fa85fa0><p><img src="https://static.wxsm.space/others/vue-plugin-flowchart-preview.png" alt="preview"></p> <p>This is a demo markdown that shows some examples of flowchart, click <strong>Read more</strong> below to see entire post.</p> <h2 id="example"><a href="#example" class="header-anchor">#</a> Example</h2> <!----><h2 id="syntax"><a href="#syntax" class="header-anchor">#</a> Syntax</h2> <pre class="language-markdown"><code>```flowchart [preset]
+
+Your flowchart code here
+
+```</code></pre> <p><code>vuepress-plugin-flowchart</code> leverages <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> under the hook.</p> <p>Available presets for now:</p> <ul><li><code>vue</code> (default)</li> <li><code>ant</code></li></ul> <p>View the current available preset <a href="https://github.com/wxsms/vuepress-plugin-flowchart-js/tree/master/lib/presets" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, feel free to submit your own preset. : )</p> <h3 id="start-end"><a href="#start-end" class="header-anchor">#</a> Start &amp; End</h3> <ul><li><code>[Variable]-&gt;start: [Text]</code></li> <li><code>[Variable]-&gt;end: [Text]</code></li></ul> <pre class="language-markdown"><code>```flowchart
+st=&gt;start: Start
+e=&gt;end: End
+
+st-&gt;e
+```</code></pre> <!----><h3 id="operation"><a href="#operation" class="header-anchor">#</a> Operation</h3> <ul><li><code>[Variable]-&gt;operation: [Text]</code></li></ul> <pre class="language-markdown"><code>```flowchart
+process=&gt;operation: Operation
+e=&gt;end: End
+
+process-&gt;e
+```</code></pre> <!----><h3 id="inputoutput"><a href="#inputoutput" class="header-anchor">#</a> Inputoutput</h3> <ul><li><code>[Variable]-&gt;inputoutput: [Text]</code></li></ul> <pre class="language-markdown"><code>```flowchart
+process=&gt;inputoutput: Inputoutput
+e=&gt;end: End
+
+process-&gt;e
+```</code></pre> <!----><h3 id="subroutine"><a href="#subroutine" class="header-anchor">#</a> Subroutine</h3> <ul><li><code>[Variable]-&gt;subroutine: [Text]</code></li></ul> <pre class="language-markdown"><code>```flowchart
+process=&gt;subroutine: Subroutine
+e=&gt;end: End
+
+process-&gt;e
+```</code></pre> <!----><h3 id="condition"><a href="#condition" class="header-anchor">#</a> Condition</h3> <ul><li><code>[Variable]-&gt;condition: [Text]</code></li> <li><code>[Variable]([yesText])-&gt;[Position]</code></li> <li><code>[Variable]([noText])-&gt;[Position]</code></li></ul> <pre class="language-markdown"><code>```flowchart
+cond=&gt;condition: Process?
+process=&gt;operation: Process
+e=&gt;end: End
+
+cond(yes)-&gt;process-&gt;e
+cond(no)-&gt;e
+```</code></pre> <!----><h3 id="parallel"><a href="#parallel" class="header-anchor">#</a> Parallel</h3> <ul><li><code>[Variable]-&gt;parallel: [Text]</code></li> <li><code>[Variable](path1, direction)-&gt;[Position]</code></li> <li><code>[Variable](path1, direction)-&gt;[Position]</code></li></ul> <pre class="language-markdown"><code>```flowchart
+para=&gt;parallel: parallel tasks
+process=&gt;operation: Process
+e=&gt;end: End
+
+para(path1, bottom)-&gt;process-&gt;e
+para(path2)-&gt;e
+```</code></pre> <!----><h2 id="showcase"><a href="#showcase" class="header-anchor">#</a> Showcase</h2> <h3 id="_1-ordinary-process"><a href="#_1-ordinary-process" class="header-anchor">#</a> #1 Ordinary process</h3> <pre class="language-markdown"><code>```flowchart
+stage1=&gt;operation: Stage 1
+stage2=&gt;operation: Stage 2
+stage3=&gt;operation: Stage 3
+
+stage1-&gt;stage2-&gt;stage3
+```</code></pre> <!----><h3 id="_2-complex-process"><a href="#_2-complex-process" class="header-anchor">#</a> #2 Complex process</h3> <pre class="language-markdown"><code>```flowchart
+st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End|future:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|future
+
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+```</code></pre> <!----><h3 id="_3-ant-preset"><a href="#_3-ant-preset" class="header-anchor">#</a> #3 Ant Preset</h3> <pre class="language-markdown"><code>```flowchart ant
+st=&gt;start: Start:&gt;http://www.google.com[blank]
+e=&gt;end:&gt;http://www.google.com
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes
+or No?:&gt;http://www.google.com
+io=&gt;inputoutput: catch something...
+para=&gt;parallel: parallel tasks
+
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;para
+para(path1, bottom)-&gt;sub1(right)-&gt;op1
+para(path2, top)-&gt;op1
+```</code></pre> <!----></div> <br data-v-0fa85fa0> <div class="last-updated" data-v-0fa85fa0><span class="prefix" data-v-0fa85fa0>READ COUNT:</span> <span id="/posts/demo-flowchart.html" class="time waline-visitor-count" data-v-0fa85fa0></span> <span data-v-0fa85fa0> </span> <span class="prefix" data-v-0fa85fa0>Last Updated:</span> <span class="time" data-v-0fa85fa0>about 1 year ago</span></div>  <div class="space-footer" data-v-76f3ea32 data-v-0fa85fa0><p class="footer-text" data-v-76f3ea32>© 2022 wxsm</p> <p class="footer-text" data-v-76f3ea32>
+    Powered by
+    <a href="https://vuepress.vuejs.org/" target="_blank" data-v-76f3ea32>VuePress</a>
+     ·  Theme by
+    <a href="https://github.com/wxsms/vuepress-theme-mini" target="_blank" data-v-76f3ea32>mini</a></p></div></div></main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.ec7dad74.js" defer></script><script src="/assets/js/layout-Layout.b31b3d0d.js" defer></script><script src="/assets/js/vendors~layout-Archive~layout-Layout~layout-Page~layout-Pager.0ac03be1.js" defer></script><script src="/assets/js/page-b2f58216.bc22399b.js" defer></script>
+  </body>
+</html>
