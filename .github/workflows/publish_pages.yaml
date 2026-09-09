@@ -7,24 +7,26 @@ on:
 
 jobs:
   deploy_gh_pages:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      # pnpm 7 matches lockfileVersion 5.x
+      - uses: pnpm/action-setup@v4
         with:
-          fetch-depth: 0
-          ref: master
-      - uses: pnpm/action-setup@v2.1.0
+          version: 7
+      - uses: actions/setup-node@v4
         with:
-          version: latest
+          node-version: 16
       - run: pnpm i --frozen-lockfile
-      # build
+      # build with the GitHub Pages sub-path base injected
       - run: npm run docs:build
+        env:
+          VUEPRESS_BASE: /vuepress-theme-mini/
       - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.6.0
+        uses: crazy-max/ghaction-github-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
           jekyll: false # 禁用 GitHub 默认开启的 jekyll 构建
-          fqdn: vuepress-theme-mini.wxsm.space # 自定义域名，需要时填写
