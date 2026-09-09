@@ -3,7 +3,7 @@ date: 2020-01-31
 title: Flowchart Demo
 ---
 
-![preview](/vuepress-theme-mini/assets/image/vue-plugin-flowchart-preview.png)
+<img :src="$withBase('/assets/image/vue-plugin-flowchart-preview.png')" alt="preview">
 
 This is a demo markdown that shows some examples of flowchart, click **Read more** below to see entire post.
 
