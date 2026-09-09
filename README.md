@@ -13,7 +13,7 @@ A minimal blogging theme of VuePress.
 
 ## Demo
 
-* [https://vuepress-theme-mini.wxsm.space](https://vuepress-theme-mini.wxsm.space)
+* [https://wxsms.github.io/vuepress-theme-mini/](https://wxsms.github.io/vuepress-theme-mini/)
 
 ## Install
 

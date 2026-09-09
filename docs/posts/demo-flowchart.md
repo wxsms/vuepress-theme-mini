@@ -3,7 +3,7 @@ date: 2020-01-31
 title: Flowchart Demo
 ---
 
-![preview](https://static.wxsm.space/others/vue-plugin-flowchart-preview.png)
+![preview](/assets/image/vue-plugin-flowchart-preview.png)
 
 This is a demo markdown that shows some examples of flowchart, click **Read more** below to see entire post.
 
